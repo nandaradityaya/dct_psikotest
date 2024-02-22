@@ -1,0 +1,844 @@
+<!doctype html>
+<html lang="en" class="color-sidebar sidebarcolor3">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--favicon-->
+	<link rel="icon" href="assets/images/index.ico" type="image/png" />
+	<!--plugins-->
+	<link href="assets/plugins/simplebar/css/simplebar.css" rel="stylesheet" />
+	<link href="assets/plugins/fullcalendar/css/main.min.css" rel="stylesheet" />
+	<link href="assets/plugins/perfect-scrollbar/css/perfect-scrollbar.css" rel="stylesheet" />
+	<link href="assets/plugins/metismenu/css/metisMenu.min.css" rel="stylesheet" />
+	<link href="assets/plugins/highcharts/css/highcharts.css" rel="stylesheet" />
+	<link rel="stylesheet" href="assets/libraries/gijgo/css/gijgo.min.css">
+	<link href="assets/plugins/select2/css/select2.min.css" rel="stylesheet" />
+	<link href="assets/plugins/select2/css/select2-bootstrap4.css" rel="stylesheet" />
+	<link href="assets/plugins/datatable/css/dataTables.bootstrap5.min.css" rel="stylesheet" />
+	<link href="assets/plugins/datetimepicker/css/classic.css" rel="stylesheet" />
+	<link href="assets/plugins/datetimepicker/css/classic.time.css" rel="stylesheet" />
+	<link href="assets/plugins/datetimepicker/css/classic.date.css" rel="stylesheet" />
+	<link rel="stylesheet" href="assets/plugins/bootstrap-material-datetimepicker/css/bootstrap-material-datetimepicker.min.css">
+	<!-- loader-->
+	<link href="assets/css/pace.min.css" rel="stylesheet" />
+	<script src="assets/js/pace.min.js"></script>
+	<!-- Bootstrap CSS -->
+	<link href="assets/css/bootstrap.min.css" rel="stylesheet">
+	<link href="assets/css/bootstrap-extended.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+	<link href="assets/css/app.css" rel="stylesheet">
+	<link href="assets/css/icons.css" rel="stylesheet">
+	<!-- Theme Style CSS -->
+	<!-- <link rel="stylesheet" href="assets/css/dark-theme.css" /> -->
+	<link rel="stylesheet" href="assets/css/semi-dark.css" />
+	<link rel="stylesheet" href="assets/css/header-colors.css" />
+	<title>DCT WEB</title>
+</head>
+
+<body>
+	<!--wrapper-->
+	<div class="wrapper">
+		<!--sidebar wrapper -->
+		<div class="sidebar-wrapper" data-simplebar="true">
+			<div class="sidebar-header">
+				<!-- <div>
+					<img src="assets/images/logo-icon.png" class="logo-icon" alt="logo icon">
+				</div> -->
+				<div style="margin-left: 40px;">
+					<a href="dashboard.html" class="logo-text" style="font-family: 'Segoe UI Black';">
+						<span style="font-size: larger; font-style: italic">DCT</span>
+						<span style="font-size: 15px; text-decoration:overline ">WEB</span>
+					</a>
+				</div>
+				<div class="toggle-icon ms-auto"><i class='bx bx-first-page'></i>
+				</div>
+			</div>
+			<!--navigation-->
+			<ul class="metismenu" id="menu">
+				<li class="menu-label">Menu</li>
+				<li>
+					<a href="applicant-data.html">
+						<div class="parent-icon"><i class='bx bx-id-card'></i>
+						</div>
+						<div class="menu-title">Applicant Data</div>
+					</a>
+				</li>
+				<li>
+					<a href="questions.html">
+						<div class="parent-icon"><img src="assets/images/icons/ic_task.svg" alt="ic_task">
+						</div>
+						<div class="menu-title">Questions</div>
+					</a>
+				</li>
+				<li>
+					<a href="instruction.html">
+						<div class="parent-icon"><img src="assets/images/icons/ic_book_exclamation.svg" alt="ic_book_exclamation">
+						</div>
+						<div class="menu-title">Instruction</div>
+					</a>
+				</li>
+				<li>
+					<a href="user.html">
+						<div class="parent-icon"><i class='bx bx-user'></i>
+						</div>
+						<div class="menu-title">User</div>
+					</a>
+				</li>
+				<li>
+					<a href="user-role.html">
+						<div class="parent-icon"><img src="assets/images/icons/ic_users_role.svg" alt="ic_users_role">
+						</div>
+						<div class="menu-title">User Role</div>
+					</a>
+				</li>
+				<li>
+					<a href="parameter.html">
+						<div class="parent-icon"><i class='bx bx-square'></i>
+						</div>
+						<div class="menu-title">Parameter</div>
+					</a>
+				</li>
+
+				<!-- <li>
+					<a href="javascript:;" class="has-arrow">
+						<div class="parent-icon"><i class='bx bx-spa' ></i>
+						</div>
+						<div class="menu-title">Application</div>
+					</a>
+					<ul>
+						<li> <a href="app-emailbox.html"><i class="bx bx-right-arrow-alt"></i>Email</a>
+						</li>
+						<li> <a href="app-chat-box.html"><i class="bx bx-right-arrow-alt"></i>Chat Box</a>
+						</li>
+						<li> <a href="app-file-manager.html"><i class="bx bx-right-arrow-alt"></i>File Manager</a>
+						</li>
+						<li> <a href="app-contact-list.html"><i class="bx bx-right-arrow-alt"></i>Contatcs</a>
+						</li>
+						<li> <a href="app-to-do.html"><i class="bx bx-right-arrow-alt"></i>Todo List</a>
+						</li>
+						<li> <a href="app-invoice.html"><i class="bx bx-right-arrow-alt"></i>Invoice</a>
+						</li>
+						<li> <a href="app-fullcalender.html"><i class="bx bx-right-arrow-alt"></i>Calendar</a>
+						</li>
+					</ul>
+				</li> -->
+				
+				
+			</ul>
+			<!--end navigation-->
+		</div>
+		<!--end sidebar wrapper -->
+		<!--start header -->
+		<header>
+			<div class="topbar d-flex align-items-center">
+				<nav class="navbar navbar-expand">
+					<div class="mobile-toggle-menu"><i class='bx bx-menu'></i>
+					</div>
+					<!-- <div class="top-menu-left d-none d-lg-block">
+						<ul class="nav">
+						  <li class="nav-item">
+							<a class="nav-link" href="app-emailbox.html"><i class='bx bx-envelope'></i></a>
+						  </li>
+						  <li class="nav-item">
+							<a class="nav-link" href="app-chat-box.html"><i class='bx bx-message'></i></a>
+						  </li>
+						  <li class="nav-item">
+							<a class="nav-link" href="app-fullcalender.html"><i class='bx bx-calendar'></i></a>
+						  </li>
+						  <li class="nav-item">
+							  <a class="nav-link" href="app-to-do.html"><i class='bx bx-check-square'></i></a>
+						  </li>
+					  </ul>
+					 </div>
+					<div class="search-bar flex-grow-1">
+						<div class="position-relative search-bar-box">
+							<input type="text" class="form-control search-control" placeholder="Type to search..."> <span class="position-absolute top-50 search-show translate-middle-y"><i class='bx bx-search'></i></span>
+							<span class="position-absolute top-50 search-close translate-middle-y"><i class='bx bx-x'></i></span>
+						</div>
+					</div> -->
+					<div class="top-menu ms-auto">
+						<ul class="navbar-nav align-items-center" >
+							<li class="nav-item">
+								<p class="mb-0 text-info">WhatsApp Kredit: 816,247 (Bisa Mengundang 1484 Orang)</p>
+							</li>
+							
+							<li class="nav-item dropdown dropdown-large" style="display: none;">
+								<a class="nav-link dropdown-toggle dropdown-toggle-nocaret position-relative" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> <span class="alert-count">8</span>
+									<i class='lni lni-headphone'></i>
+								</a>
+								<div class="dropdown-menu dropdown-menu-end">
+									<a href="javascript:;">
+										<div class="msg-header">
+											<p class="msg-header-title">Messages</p>
+											<p class="msg-header-clear ms-auto">Marks all as read</p>
+										</div>
+									</a>
+									<div class="header-message-list">
+										<a class="dropdown-item" href="javascript:;">
+											<div class="d-flex align-items-center">
+												<div class="user-online">
+													<img src="assets/images/avatars/avatar-1.png" class="msg-avatar" alt="user avatar">
+												</div>
+												<div class="flex-grow-1">
+													<h6 class="msg-name">Daisy Anderson <span class="msg-time float-end">5 sec
+												ago</span></h6>
+													<p class="msg-info">The standard chunk of lorem</p>
+												</div>
+											</div>
+										</a>
+									</div>
+									<a href="javascript:;">
+										<div class="text-center msg-footer">View All Messages</div>
+									</a>
+								</div>
+							</li>
+							<li class="nav-item dropdown dropdown-large" style="display: none;">
+								<a class="nav-link dropdown-toggle dropdown-toggle-nocaret position-relative" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> <span class="alert-count">7</span>
+									<i class='bx bx-bell'></i>
+								</a>
+								<div class="dropdown-menu dropdown-menu-end">
+									<a href="javascript:;">
+										<div class="msg-header">
+											<p class="msg-header-title">Notifications</p>
+											<p class="msg-header-clear ms-auto">Marks all as read</p>
+										</div>
+									</a>
+									<div class="header-notifications-list">
+										<a class="dropdown-item" href="javascript:;">
+											<div class="d-flex align-items-center">
+												<div class="notify bg-light-primary text-primary"><i class="bx bx-group"></i>
+												</div>
+												<div class="flex-grow-1">
+													<h6 class="msg-name">New Customers<span class="msg-time float-end">14 Sec
+												ago</span></h6>
+													<p class="msg-info">5 new user registered</p>
+												</div>
+											</div>
+										</a>
+									</div>
+									<a href="javascript:;">
+										<div class="text-center msg-footer">View All Notifications</div>
+									</a>
+								</div>
+							</li>
+							
+						</ul>
+					</div>
+					<div class="user-box dropdown">
+						<a class="d-flex align-items-center nav-link dropdown-toggle dropdown-toggle-nocaret" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+							<img src="assets/images/avatars/nanda.jpg" class="user-img" alt="user avatar">
+							<div class="user-info ps-3">
+								<p class="user-name mb-0">Nanda Raditya</p>
+								<p class="designattion mb-0">UI/UX Designer</p>
+							</div>
+						</a>
+						<ul class="dropdown-menu dropdown-menu-end">
+							<li><a class="dropdown-item" href="javascript:;"><i class="bx bx-user"></i><span>Profile</span></a>
+							</li>
+							<li><a class="dropdown-item" href="javascript:;"><i class='bx bx-help-circle'></i><span>Help Desk</span></a>
+								<li>
+							<li><a class="dropdown-item" href="javascript:;"><i class="bx bx-lock"></i><span>Change Password</span></a>
+							</li>
+							
+								<div class="dropdown-divider mb-0"></div>
+							</li>
+							<li><a class="dropdown-item" href="javascript:;"><i class='bx bx-log-out-circle'></i><span>Logout</span></a>
+							</li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+		</header>
+		<!--end header -->
+		<!--start page wrapper -->
+		<div class="page-wrapper">
+			<div class="page-content">
+				<!--breadcrumb-->
+				<div class="page-breadcrumb d-none d-sm-flex align-items-center mb-3">
+					<div class="breadcrumb-title pe-3">Questions</div>
+					<div class="ps-3">
+						<nav aria-label="breadcrumb">
+							<ol class="breadcrumb mb-0 p-0">
+							  <li class="breadcrumb-item"><a href="applicant-data.html"><i class="bx bx-home-alt"></i></a>
+							  </li>
+							  <li class="breadcrumb-item" aria-current="page"><a href="questions.html">Questions Package</a></li>
+							  <li class="breadcrumb-item active" aria-current="page">Group Question</li>
+							</ol>
+						  </nav>
+					</div>
+				</div>
+				<!--end breadcrumb-->
+
+				<div class="card radius-10">
+					<div class="card-body">
+						<div class="d-flex align-items-center">
+							<div>
+								<h5 class="font-weight-bold mb-0">Group Question</h5>
+							</div>
+							<div class="ms-auto mt-2">
+								<!-- <button type="button" class="btn btn-primary radius-8 d-flex align-items-center" data-bs-toggle="modal" data-bs-target="#addNewQuestion"><i class="bx bx-plus"></i>Add New</button> -->
+								<a href="question-answer.html" type="button" class="btn btn-primary radius-8 d-flex align-items-center"><i class="bx bx-plus"></i>Add New</a>
+							</div>
+						</div>
+						<div class="table-responsive">
+							<div id="printbar" style="float:right"></div>
+							<br>
+							<table id="questionsPackageTable" class="table mb-0 align-middle" style="width:100%">
+								<thead class="table-light">
+									<tr>
+										<th>No</th>
+										<th>No. Package</th>
+										<th>Name</th>
+										<th>Min. Question</th>
+										<th>Passing Score</th>
+										<th>Time Test (Minutes)</th>
+										<th>Random Question</th>
+										<th>Status</th>
+										<th>No. Instruction</th>
+										<th>User Input</th>
+										<th>Time Input</th>
+										<th>Action</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>1</td>
+										<td>4029</td>
+										<td>AT-IPP-01</td>
+										<td>20</td>
+										<td>9</td>
+										<td>5</td>
+										<td><div class="badge rounded-pill text-success bg-light-success p-2 text-uppercase px-3">
+											Active</div></td>
+										<td><div class="badge rounded-pill text-success bg-light-success p-2 text-uppercase px-3">
+												Active</div></td>
+										<td>10</td>
+										<td>w-888</td>
+										<td>20 Jan 2024</td>
+										<td><div class="d-flex order-actions">
+											<a type="button" class="text-primary bg-light-primary border-0 me-3" data-bs-toggle="modal" data-bs-target="#editGroupQuestion"><i class="bx bxs-edit"></i></a>
+											<a type="button" class="text-danger bg-light-danger border-0" data-bs-toggle="modal" data-bs-target="#modalDelete"><i class="bx bxs-trash"></i></a>
+										</div></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+				
+
+				<!-- Modal Box Add New Package -->
+				<div class="modal fade" id="addNewQuestion" tabindex="-1"
+					aria-labelledby="addNewQuestionLabel" aria-hidden="true">
+					<div class="modal-dialog modal-lg">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title" id="addNewQuestionLabel">Add New Question Group</h5>
+								<button type="button" class="btn-close" data-bs-dismiss="modal"
+									aria-label="Close"></button>
+							</div>
+							<div class="modal-body">
+								<div class="row">
+									<div class="col-lg-6 col-md-12 col-sm-12 mb-3">
+										<label for="groupName" class="form-label">Group Name</label>
+										<input type="text" class="form-control" id="groupName" placeholder="Group Name...">
+									</div>
+									<div class="col-lg-6 col-md-12 col-sm-12 mb-3">
+										<label for="passingGrade" class="form-label">Passing Score</label>
+										<input type="number" class="form-control" id="passingGrade" placeholder="Passing Score...">
+									</div>
+									<div class="col-lg-4 col-md-12 col-sm-12 mb-3">
+										<label for="minQuestion" class="form-label">Min. Question</label>
+										<input type="number" class="form-control" id="minQuestion" placeholder="Minimum Question...">
+									</div>
+									
+									<div class="col-lg-4 col-md-12 col-sm-12 mb-3">
+										<label for="timeTest" class="form-label">Time Test (Minutes)</label>
+										<input type="number" class="form-control" id="timeTest" placeholder="Time Test...">
+									</div>
+									<div class="col-lg-4 col-md-12 col-sm-12 mb-3">
+										<label class="form-label">No. Instruction</label>
+										<select id="singleSelect" class="" data-placeholder="Choose anything" aria-describedby="detailInstruction">
+											<option value="1">1</option>
+											<option value="2">2</option>
+											<option value="3">3</option>
+											<option value="4">4</option>
+											<option value="5">5</option>
+										</select>
+										<div>Please check detail instuction <u type="button" class="text-primary" data-bs-toggle="modal" data-bs-target="#modalInstruction">Here</u></div>
+									</div> 
+									<div class="col-lg-4 col-md-12 col-sm-12 mb-3">
+										<label class="form-label">Random Question</label>
+										<div class="d-flex">
+											<div class="form-check me-2">
+												<input class="form-check-input" type="radio" name="flexRadioRandom" id="radioActiveRandom">
+												<label class="form-check-label" for="radioActiveRandom">Active</label>
+											</div>
+											<div class="form-check">
+												<input class="form-check-input" type="radio" name="flexRadioRandom" id="radioInactiveRandom">
+												<label class="form-check-label" for="radioInactiveRandom">Inactive</label>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-4 col-md-12 col-sm-12 mb-3">
+										<label class="form-label">Kreplin Group</label>
+										<div class="d-flex">
+											<div class="form-check me-2">
+												<input class="form-check-input" type="radio" name="flexRadioKreplin" id="flexRadioYesKreplin">
+												<label class="form-check-label" for="flexRadioYesKreplin">Yes</label>
+											</div>
+											<div class="form-check">
+												<input class="form-check-input" type="radio" name="flexRadioKreplin" id="flexRadioNoKreplin">
+												<label class="form-check-label" for="flexRadioNoKreplin">No</label>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-4 col-md-12 col-sm-12 mb-3">
+										<label class="form-label">Priority</label>
+										<div class="d-flex">
+											<div class="form-check me-2">
+												<input class="form-check-input" type="radio" name="flexRadioPriority" id="flexRadioYesPriority">
+												<label class="form-check-label" for="flexRadioYesPriority">Yes</label>
+											</div>
+											<div class="form-check">
+												<input class="form-check-input" type="radio" name="flexRadioPriority" id="flexRadioNoPriority">
+												<label class="form-check-label" for="flexRadioNoPriority">No</label>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-4 col-md-12 col-sm-12 mb-3">
+										<label class="form-label">Status</label>
+										<div class="d-flex">
+											<div class="form-check me-2">
+												<input class="form-check-input" type="radio" name="flexRadioStatus" id="flexRadioActiveStatus">
+												<label class="form-check-label" for="flexRadioActiveStatus">Active</label>
+											</div>
+											<div class="form-check">
+												<input class="form-check-input" type="radio" name="flexRadioStatus" id="flexRadioInactiveStatus">
+												<label class="form-check-label" for="flexRadioInactiveStatus">Inactive</label>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							
+							<div class="modal-footer">
+								<button type="button" class="btn btn-secondary"
+									data-bs-dismiss="modal">Close</button>
+								<button type="button" class="btn btn-primary">Save</button>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Modal Box Add New Package -->
+				<div class="modal fade" id="editGroupQuestion" tabindex="-1"
+					aria-labelledby="editGroupQuestionLabel" aria-hidden="true">
+					<div class="modal-dialog modal-lg">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title" id="editGroupQuestionLabel">Edit Question Group</h5>
+								<button type="button" class="btn-close" data-bs-dismiss="modal"
+									aria-label="Close"></button>
+							</div>
+							<div class="modal-body">
+								<div class="row">
+									<div class="col-lg-6 col-md-12 col-sm-12 mb-3">
+										<label for="groupName" class="form-label">Group Name</label>
+										<input type="text" class="form-control" id="groupName" placeholder="Group Name...">
+									</div>
+									<div class="col-lg-6 col-md-12 col-sm-12 mb-3">
+										<label for="passingGrade" class="form-label">Passing Score</label>
+										<input type="number" class="form-control" id="passingGrade" placeholder="Passing Score...">
+									</div>
+									<div class="col-lg-4 col-md-12 col-sm-12 mb-3">
+										<label for="minQuestion" class="form-label">Min. Question</label>
+										<input type="number" class="form-control" id="minQuestion" placeholder="Minimum Question...">
+									</div>
+									
+									<div class="col-lg-4 col-md-12 col-sm-12 mb-3">
+										<label for="timeTest" class="form-label">Time Test (Minutes)</label>
+										<input type="number" class="form-control" id="timeTest" placeholder="Time Test...">
+									</div>
+									<div class="col-lg-4 col-md-12 col-sm-12 mb-3">
+										<label class="form-label">No. Instruction</label>
+										<select id="singleSelectEdit" class="" data-placeholder="Choose anything" aria-describedby="detailInstruction">
+											<option value="1">1</option>
+											<option value="2">2</option>
+											<option value="3">3</option>
+											<option value="4">4</option>
+											<option value="5">5</option>
+										</select>
+										<div>Please check detail instuction <u type="button" class="text-primary" data-bs-toggle="modal" data-bs-target="#modalEditInstruction">Here</u></div>
+									</div> 
+									<div class="col-lg-4 col-md-12 col-sm-12 mb-3">
+										<label class="form-label">Random Question</label>
+										<div class="d-flex">
+											<div class="form-check me-2">
+												<input class="form-check-input" type="radio" name="flexRadioRandom" id="radioActiveRandom">
+												<label class="form-check-label" for="radioActiveRandom">Active</label>
+											</div>
+											<div class="form-check">
+												<input class="form-check-input" type="radio" name="flexRadioRandom" id="radioInactiveRandom">
+												<label class="form-check-label" for="radioInactiveRandom">Inactive</label>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-4 col-md-12 col-sm-12 mb-3">
+										<label class="form-label">Kreplin Group</label>
+										<div class="d-flex">
+											<div class="form-check me-2">
+												<input class="form-check-input" type="radio" name="flexRadioKreplin" id="flexRadioYesKreplin">
+												<label class="form-check-label" for="flexRadioYesKreplin">Yes</label>
+											</div>
+											<div class="form-check">
+												<input class="form-check-input" type="radio" name="flexRadioKreplin" id="flexRadioNoKreplin">
+												<label class="form-check-label" for="flexRadioNoKreplin">No</label>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-4 col-md-12 col-sm-12 mb-3">
+										<label class="form-label">Priority</label>
+										<div class="d-flex">
+											<div class="form-check me-2">
+												<input class="form-check-input" type="radio" name="flexRadioPriority" id="flexRadioYesPriority">
+												<label class="form-check-label" for="flexRadioYesPriority">Yes</label>
+											</div>
+											<div class="form-check">
+												<input class="form-check-input" type="radio" name="flexRadioPriority" id="flexRadioNoPriority">
+												<label class="form-check-label" for="flexRadioNoPriority">No</label>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-4 col-md-12 col-sm-12 mb-3">
+										<label class="form-label">Status</label>
+										<div class="d-flex">
+											<div class="form-check me-2">
+												<input class="form-check-input" type="radio" name="flexRadioStatus" id="flexRadioActiveStatus">
+												<label class="form-check-label" for="flexRadioActiveStatus">Active</label>
+											</div>
+											<div class="form-check">
+												<input class="form-check-input" type="radio" name="flexRadioStatus" id="flexRadioInactiveStatus">
+												<label class="form-check-label" for="flexRadioInactiveStatus">Inactive</label>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							
+							<div class="modal-footer">
+								<button type="button" class="btn btn-secondary"
+									data-bs-dismiss="modal">Close</button>
+								<button type="button" class="btn btn-primary">Save</button>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Modal Box Instruction -->
+				<div class="modal fade" id="modalInstruction" tabindex="-1" aria-labelledby="modalInstructionLabel" aria-hidden="true">
+					<div class="modal-dialog modal-xl">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title" id="modalInstructionLabel">Instruction</h5>
+								<button type="button" class="btn-close" data-bs-toggle="modal" data-bs-target="#addNewQuestion"></button>
+							</div>
+							<div class="modal-body">
+								<div class="">
+									<div id="printbar" style="float:right"></div>
+									<br>
+									<table id="tableInstruction" class="table mb-0 align-middle" style="width:100%">
+										<thead class="table-light">
+											<tr>
+												<th>No. Instruction</th>
+												<th>Instruction</th>
+												<th>Status</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>1</td>
+												<td>
+													Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto hic necessitatibus amet vero in delectus deserunt quos, natus minima, tenetur adipisci doloremque praesentium ullam facere. Rerum facilis expedita eum ea.
+												</td>
+												<td><div class="badge rounded-pill text-success bg-light-success p-2 text-uppercase px-3">
+													Active</div></td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-secondary radius-8"
+								data-bs-toggle="modal" data-bs-target="#addNewQuestion">Back</button>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Modal Box Edit -->
+				<div class="modal fade" id="modalEditInstruction" tabindex="-1" aria-labelledby="modalEditInstructionLabel" aria-hidden="true">
+					<div class="modal-dialog modal-xl">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title" id="modalEditInstructionLabel">Instruction</h5>
+								<button type="button" class="btn-close" data-bs-toggle="modal" data-bs-target="#editGroupQuestion"></button>
+							</div>
+							<div class="modal-body">
+								<div class="">
+									<div id="printbar" style="float:right"></div>
+									<br>
+									<table id="tableInstruction" class="table mb-0 align-middle" style="width:100%">
+										<thead class="table-light">
+											<tr>
+												<th>No. Instruction</th>
+												<th>Instruction</th>
+												<th>Status</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>1</td>
+												<td>
+													Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto hic necessitatibus amet vero in delectus deserunt quos, natus minima, tenetur adipisci doloremque praesentium ullam facere. Rerum facilis expedita eum ea.
+												</td>
+												<td><div class="badge rounded-pill text-success bg-light-success p-2 text-uppercase px-3">
+													Active</div></td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-secondary radius-8"
+								data-bs-toggle="modal" data-bs-target="#editGroupQuestion">Back</button>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Modal Box Delete -->
+				<div class="modal fade" id="modalDelete" tabindex="-1" aria-labelledby="modalDeleteLabel" aria-hidden="true">
+					<div class="modal-dialog modal-lg">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title" id="modalDeleteLabel">Delete Question</h5>
+								<button type="button" class="btn-close" data-bs-dismiss="modal"
+									aria-label="Close"></button>
+							</div>
+							<div class="modal-body">
+								Are you sure want to delete this package?
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-secondary radius-8"
+									data-bs-dismiss="modal">Cancel</button>
+								<button type="button" class="btn btn-danger radius-8">Delete</button>
+							</div>
+						</div>
+					</div>
+				</div>
+
+		</div>
+		<!--end page wrapper -->
+		<!--start overlay-->
+		<div class="overlay toggle-icon"></div>
+		<!--end overlay-->
+		<!--Start Back To Top Button--> <a href="javaScript:;" class="back-to-top"><i class='bx bxs-up-arrow-alt'></i></a>
+		<!--End Back To Top Button-->
+		<footer class="page-footer">
+			<p class="mb-0">Copyright © 2023. All right reserved.</p>
+		</footer>
+	</div>
+	<!--end wrapper-->
+	<!-- Bootstrap JS -->
+	<script src="assets/js/bootstrap.bundle.min.js"></script>
+	<!--plugins-->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/plugins/simplebar/js/simplebar.min.js"></script>
+	<script src="assets/plugins/fullcalendar/js/main.min.js"></script>
+	<script src="assets/plugins/metismenu/js/metisMenu.min.js"></script>
+	<script src="assets/plugins/perfect-scrollbar/js/perfect-scrollbar.js"></script>
+	<script src="assets/libraries/gijgo/js/gijgo.min.js"></script>
+	<script src="assets/plugins/select2/js/select2.min.js"></script>
+	<script src="assets/plugins/datatable/js/jquery.dataTables.min.js"></script>
+	<script src="assets/plugins/datatable/js/dataTables.bootstrap5.min.js"></script>
+	<script src="assets/plugins/datetimepicker/js/legacy.js"></script>
+	<script src="assets/plugins/datetimepicker/js/picker.js"></script>
+	<script src="assets/plugins/datetimepicker/js/picker.time.js"></script>
+	<script src="assets/plugins/datetimepicker/js/picker.date.js"></script>
+	<script src="assets/plugins/bootstrap-material-datetimepicker/js/moment.min.js"></script>
+	<script src="assets/plugins/bootstrap-material-datetimepicker/js/bootstrap-material-datetimepicker.min.js"></script>
+	<!-- highcharts js -->
+	<script src="assets/plugins/highcharts/js/highcharts.js"></script>
+	<script src="assets/plugins/highcharts/js/highcharts-more.js"></script>
+	<script src="assets/plugins/highcharts/js/variable-pie.js"></script>
+	<script src="assets/plugins/highcharts/js/solid-gauge.js"></script>
+	<script src="assets/plugins/highcharts/js/highcharts-3d.js"></script>
+	<script src="assets/plugins/highcharts/js/cylinder.js"></script>
+	<script src="assets/plugins/highcharts/js/funnel3d.js"></script>
+	<script src="assets/plugins/highcharts/js/exporting.js"></script>
+	<script src="assets/plugins/highcharts/js/export-data.js"></script>
+	<script src="assets/plugins/highcharts/js/accessibility.js"></script>
+	<script src="assets/js/index4.js"></script>
+	<script src="assets/js/toggle-button.js"></script>
+	<script>
+		$('.single-select').select2({
+			theme: 'bootstrap4',
+			width: $(this).data('width') ? $(this).data('width') : $(this).hasClass('w-100') ? '100%' : 'style',
+			placeholder: $(this).data('placeholder'),
+			allowClear: Boolean($(this).data('allow-clear')),
+		});
+		$('.multiple-select').select2({
+			theme: 'bootstrap4',
+			width: $(this).data('width') ? $(this).data('width') : $(this).hasClass('w-100') ? '100%' : 'style',
+			placeholder: $(this).data('placeholder'),
+			allowClear: Boolean($(this).data('allow-clear')),
+		});
+		$('#multipleSelect').select2({
+			dropdownParent: $('#addNewQuestionPackage'),
+			theme: 'bootstrap4',
+			width: $(this).data('width') ? $(this).data('width') : $(this).hasClass('w-100') ? '100%' : 'style',
+			placeholder: $(this).data('placeholder'),
+			allowClear: Boolean($(this).data('allow-clear')),
+		});
+		$('#singleSelect').select2({
+			dropdownParent: $('#addNewQuestion'),
+			theme: 'bootstrap4',
+			width: $(this).data('width') ? $(this).data('width') : $(this).hasClass('w-100') ? '100%' : 'style',
+			placeholder: $(this).data('placeholder'),
+			allowClear: Boolean($(this).data('allow-clear')),
+		});
+
+		$('#singleSelectEdit').select2({
+			dropdownParent: $('#editGroupQuestion'),
+			theme: 'bootstrap4',
+			width: $(this).data('width') ? $(this).data('width') : $(this).hasClass('w-100') ? '100%' : 'style',
+			placeholder: $(this).data('placeholder'),
+			allowClear: Boolean($(this).data('allow-clear')),
+		});
+		
+	</script>
+	<script>
+		$(document).ready(function () {
+			var table = $('#questionsPackageTable').DataTable({
+			});
+		});
+
+		$(document).ready(function () {
+			var table = $('#tableInstruction').DataTable({
+			});
+		});
+
+		$(document).ready(function () {
+			var table = $('#tableListLeaveRequest').DataTable({
+				dom: '<"row top"<"col-lg-4 col-md-4 col-sm-12 mb-2"B><"col-lg-4 col-md-4 col-sm-12 mb-2"l><"col-lg-4 col-md-4 col-sm-12 mb-2"f>>rtip',
+				buttons: ['csv', 'excel', 'pdf', 'print']
+			});
+
+			table.buttons().container()
+				.appendTo('#tableUser_wrapper .col-md-6:eq(0)');
+		});
+
+		$(document).ready(function () {
+			var table = $('#tablePsikotestResult').DataTable({
+				dom: '<"row top"<"col-lg-4 col-md-4 col-sm-12 mb-2"B><"col-lg-4 col-md-4 col-sm-12 mb-2"l><"col-lg-4 col-md-4 col-sm-12 mb-2"f>>rtip',
+				buttons: ['csv', 'excel', 'pdf', 'print']
+			});
+
+			table.buttons().container()
+				.appendTo('#tableUser_wrapper .col-md-6:eq(0)');
+		});
+		
+	</script>
+	<script>
+		$(document).ready(function () {
+			$("#startDateCreatedQuestion").datepicker({
+				uiLibrary: "bootstrap4",
+				icons: {
+					rightIcon: '<img src="assets/images/icons/calendar-days.svg" />'
+				}
+			})
+
+			$("#endDateCreatedQuestion").datepicker({
+				uiLibrary: "bootstrap4",
+				icons: {
+					rightIcon: '<img src="assets/images/icons/calendar-days.svg" />'
+				}
+			})
+
+			$("#startDatePsikotestResult").datepicker({
+				uiLibrary: "bootstrap4",
+				icons: {
+					rightIcon: '<img src="assets/images/icons/calendar-days.svg" />'
+				}
+			})
+
+			$("#endDatePsikotestResult").datepicker({
+				uiLibrary: "bootstrap4",
+				icons: {
+					rightIcon: '<img src="assets/images/icons/calendar-days.svg" />'
+				}
+			})
+
+
+			$("#datePsikotest").datepicker({
+				uiLibrary: "bootstrap4",
+				icons: {
+					rightIcon: '<img src="assets/images/icons/calendar-days.svg" />'
+				}
+			})
+
+			$("#dateInterview").datepicker({
+				uiLibrary: "bootstrap4",
+				icons: {
+					rightIcon: '<img src="assets/images/icons/calendar-days.svg" />'
+				}
+			})
+
+			$("#editDateInterview").datepicker({
+				uiLibrary: "bootstrap4",
+				icons: {
+					rightIcon: '<img src="assets/images/icons/calendar-days.svg" />'
+				}
+			})
+
+		});
+	</script>
+	<script>
+		$('.datepicker').pickadate({
+			selectMonths: true,
+	        selectYears: true
+		}),
+		$('.timepicker').pickatime()
+	</script>
+	<script>
+		$(function () {
+			$('#date-time').bootstrapMaterialDatePicker({
+				format: 'YYYY-MM-DD HH:mm'
+			});
+			$('#date').bootstrapMaterialDatePicker({
+				time: false
+			});
+			$('#timePsikotest').bootstrapMaterialDatePicker({
+				date: false,
+				format: 'HH:mm'
+			});
+			$('#timeInterview').bootstrapMaterialDatePicker({
+				date: false,
+				format: 'HH:mm'
+			});
+			$('#editTimeInterview').bootstrapMaterialDatePicker({
+				date: false,
+				format: 'HH:mm'
+			});
+		});
+	</script>
+
+
+	<!--app JS-->
+	<script src="assets/js/app.js"></script>
+</body>
+
+</html>
