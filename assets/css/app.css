@@ -124,7 +124,7 @@ a {
 
   cursor: pointer;
 
-  color: #0727d7;
+  color: #09c0fa;
 }
 
 /* Header */
@@ -345,7 +345,7 @@ a {
 .sidebar-wrapper .metismenu a:focus,
 .sidebar-wrapper .metismenu a:active,
 .sidebar-wrapper .metismenu .mm-active > a {
-  color: #0727d7;
+  color: #09c0fa;
 
   text-decoration: none;
 
@@ -536,7 +536,7 @@ a {
 
   right: 12px;
 
-  background-color: #0727d7;
+  background-color: #09c0fa;
 
   z-index: 5;
 }
@@ -753,7 +753,7 @@ a {
 }
 
 .fm-menu .list-group a:hover {
-  background: #0727d7;
+  background: #09c0fa;
 
   color: #ffffff;
 
@@ -966,6 +966,10 @@ a {
   font-size: 60px;
 }
 
+.font-weight-bold {
+  font-weight: 700 !important;
+}
+
 .radius-4 {
   border-radius: 4px;
 }
@@ -1087,7 +1091,7 @@ a {
 
   margin-bottom: 20px;
 
-  border-bottom: 1px solid #0727d7;
+  border-bottom: 1px solid #09c0fa;
 }
 
 .invoice .company-details {
@@ -1121,7 +1125,7 @@ a {
 .invoice .invoice-details .invoice-id {
   margin-top: 0;
 
-  color: #0727d7;
+  color: #09c0fa;
 }
 
 .invoice main {
@@ -1139,7 +1143,7 @@ a {
 .invoice main .notices {
   padding-left: 6px;
 
-  border-left: 6px solid #0727d7;
+  border-left: 6px solid #09c0fa;
 
   background: #e7f2ff;
 
@@ -1182,7 +1186,7 @@ a {
 
   font-weight: 400;
 
-  color: #0727d7;
+  color: #09c0fa;
 
   font-size: 1.2em;
 }
@@ -1200,7 +1204,7 @@ a {
 
   font-size: 1.6em;
 
-  background: #0727d7;
+  background: #09c0fa;
 }
 
 .invoice table .unit {
@@ -1208,7 +1212,7 @@ a {
 }
 
 .invoice table .total {
-  background: #0727d7;
+  background: #09c0fa;
 
   color: #fff;
 }
@@ -1238,11 +1242,11 @@ a {
 }
 
 .invoice table tfoot tr:last-child td {
-  color: #0727d7;
+  color: #09c0fa;
 
   font-size: 1.4em;
 
-  border-top: 1px solid #0727d7;
+  border-top: 1px solid #09c0fa;
 }
 
 .invoice table tfoot tr td:first-child {
@@ -1485,7 +1489,7 @@ a {
 
 .chat-tab-menu .nav-pills .nav-link.active,
 .chat-tab-menu .nav-pills .show > .nav-link {
-  color: #0727d7;
+  color: #09c0fa;
 
   background-color: rgb(0 123 255 / 0%);
 }
@@ -1759,7 +1763,7 @@ a {
 }
 
 .email-navigation a.list-group-item.active {
-  color: #0727d7;
+  color: #09c0fa;
 
   font-weight: 600;
 
@@ -1921,9 +1925,9 @@ a {
 /* Navs and Tabs */
 
 .nav-primary.nav-tabs .nav-link.active {
-  color: #0727d7;
+  color: #09c0fa;
 
-  border-color: #0727d7 #0727d7 #fff;
+  border-color: #09c0fa #09c0fa #fff;
 }
 
 .nav-danger.nav-tabs .nav-link.active {
@@ -2024,6 +2028,18 @@ a {
 
 .bg-light-info {
   background-color: rgb(13 202 240 / 18%) !important;
+}
+
+.bg-light-secondary {
+  background-color: #f7f7f7 !important;
+}
+
+.border-success {
+  border: 1px solid #15ca20;
+}
+
+.border-danger {
+  border: 1px solid #fd3550;
 }
 
 .bg-gradient-cosmic {
@@ -2266,7 +2282,7 @@ a {
 
 .authentication-header {
   position: absolute;
-  background: #0727d7;
+  background: #09c0fa;
   top: 0;
   left: 0;
   right: 0;
@@ -2948,7 +2964,7 @@ input::placeholder {
 
   font-size: 24px;
 
-  background: #0727d7;
+  background: #09c0fa;
 
   box-shadow: 0 0.3rem 0.6rem rgba(0, 0, 0, 0.13);
 
@@ -3240,7 +3256,12 @@ input::placeholder {
 }
 
 .tablinks.selected {
-  background-color: #0727d7;
+  background-color: #09c0fa;
+  color: #ffffff;
+}
+
+.tab-result.selected {
+  background-color: #09c0fa;
   color: #ffffff;
 }
 
