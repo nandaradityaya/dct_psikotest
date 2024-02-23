@@ -1,0 +1,693 @@
+<!doctype html>
+<html lang="en" class="color-sidebar sidebarcolor3">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--favicon-->
+	<link rel="icon" href="assets/images/index.ico" type="image/png" />
+	<!--plugins-->
+	<link href="assets/plugins/simplebar/css/simplebar.css" rel="stylesheet" />
+	<link href="assets/plugins/fullcalendar/css/main.min.css" rel="stylesheet" />
+	<link href="assets/plugins/perfect-scrollbar/css/perfect-scrollbar.css" rel="stylesheet" />
+	<link href="assets/plugins/metismenu/css/metisMenu.min.css" rel="stylesheet" />
+	<link href="assets/plugins/highcharts/css/highcharts.css" rel="stylesheet" />
+	<link rel="stylesheet" href="assets/libraries/gijgo/css/gijgo.min.css">
+	<link href="assets/plugins/select2/css/select2.min.css" rel="stylesheet" />
+	<link href="assets/plugins/select2/css/select2-bootstrap4.css" rel="stylesheet" />
+	<link href="assets/plugins/datatable/css/dataTables.bootstrap5.min.css" rel="stylesheet" />
+	<link href="assets/plugins/datetimepicker/css/classic.css" rel="stylesheet" />
+	<link href="assets/plugins/datetimepicker/css/classic.time.css" rel="stylesheet" />
+	<link href="assets/plugins/datetimepicker/css/classic.date.css" rel="stylesheet" />
+	<link rel="stylesheet" href="assets/plugins/bootstrap-material-datetimepicker/css/bootstrap-material-datetimepicker.min.css">
+	<link rel="stylesheet" href="assets/plugins/richtexteditor/rte_theme_default.css" />
+	<!-- loader-->
+	<link href="assets/css/pace.min.css" rel="stylesheet" />
+	<script src="assets/js/pace.min.js"></script>
+	<!-- Bootstrap CSS -->
+	<link href="assets/css/bootstrap.min.css" rel="stylesheet">
+	<link href="assets/css/bootstrap-extended.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+	<link href="assets/css/app.css" rel="stylesheet">
+	<link href="assets/css/icons.css" rel="stylesheet">
+	<!-- Theme Style CSS -->
+	<!-- <link rel="stylesheet" href="assets/css/dark-theme.css" /> -->
+	<link rel="stylesheet" href="assets/css/semi-dark.css" />
+	<link rel="stylesheet" href="assets/css/header-colors.css" />
+	<title>DCT WEB</title>
+</head>
+
+<body>
+	<!--wrapper-->
+	<div class="wrapper">
+		<!--sidebar wrapper -->
+		<div class="sidebar-wrapper" data-simplebar="true">
+			<div class="sidebar-header">
+				<!-- <div>
+					<img src="assets/images/logo-icon.png" class="logo-icon" alt="logo icon">
+				</div> -->
+				<div style="margin-left: 40px;">
+					<a href="dashboard.html" class="logo-text" style="font-family: 'Segoe UI Black';">
+						<span style="font-size: larger; font-style: italic">DCT</span>
+						<span style="font-size: 15px; text-decoration:overline ">WEB</span>
+					</a>
+				</div>
+				<div class="toggle-icon ms-auto"><i class='bx bx-first-page'></i>
+				</div>
+			</div>
+			<!--navigation-->
+			<ul class="metismenu" id="menu">
+				<li class="menu-label">Menu</li>
+				<li>
+					<a href="applicant-data.html">
+						<div class="parent-icon"><i class='bx bx-id-card'></i>
+						</div>
+						<div class="menu-title">Applicant Data</div>
+					</a>
+				</li>
+				<li>
+					<a href="questions.html">
+						<div class="parent-icon"><img src="assets/images/icons/ic_task.svg" alt="ic_task">
+						</div>
+						<div class="menu-title">Questions</div>
+					</a>
+				</li>
+				<li>
+					<a href="instruction.html">
+						<div class="parent-icon"><img src="assets/images/icons/ic_book_exclamation.svg" alt="ic_book_exclamation">
+						</div>
+						<div class="menu-title">Instruction</div>
+					</a>
+				</li>
+				<li>
+					<a href="user.html">
+						<div class="parent-icon"><i class='bx bx-user'></i>
+						</div>
+						<div class="menu-title">User</div>
+					</a>
+				</li>
+				<li>
+					<a href="user-role.html">
+						<div class="parent-icon"><img src="assets/images/icons/ic_users_role.svg" alt="ic_users_role">
+						</div>
+						<div class="menu-title">User Role</div>
+					</a>
+				</li>
+				<li>
+					<a href="parameter.html">
+						<div class="parent-icon"><i class='bx bx-square'></i>
+						</div>
+						<div class="menu-title">Parameter</div>
+					</a>
+				</li>
+
+				<!-- <li>
+					<a href="javascript:;" class="has-arrow">
+						<div class="parent-icon"><i class='bx bx-spa' ></i>
+						</div>
+						<div class="menu-title">Application</div>
+					</a>
+					<ul>
+						<li> <a href="app-emailbox.html"><i class="bx bx-right-arrow-alt"></i>Email</a>
+						</li>
+						<li> <a href="app-chat-box.html"><i class="bx bx-right-arrow-alt"></i>Chat Box</a>
+						</li>
+						<li> <a href="app-file-manager.html"><i class="bx bx-right-arrow-alt"></i>File Manager</a>
+						</li>
+						<li> <a href="app-contact-list.html"><i class="bx bx-right-arrow-alt"></i>Contatcs</a>
+						</li>
+						<li> <a href="app-to-do.html"><i class="bx bx-right-arrow-alt"></i>Todo List</a>
+						</li>
+						<li> <a href="app-invoice.html"><i class="bx bx-right-arrow-alt"></i>Invoice</a>
+						</li>
+						<li> <a href="app-fullcalender.html"><i class="bx bx-right-arrow-alt"></i>Calendar</a>
+						</li>
+					</ul>
+				</li> -->
+				
+				
+			</ul>
+			<!--end navigation-->
+		</div>
+		<!--end sidebar wrapper -->
+		<!--start header -->
+		<header>
+			<div class="topbar d-flex align-items-center">
+				<nav class="navbar navbar-expand">
+					<div class="mobile-toggle-menu"><i class='bx bx-menu'></i>
+					</div>
+					<!-- <div class="top-menu-left d-none d-lg-block">
+						<ul class="nav">
+						  <li class="nav-item">
+							<a class="nav-link" href="app-emailbox.html"><i class='bx bx-envelope'></i></a>
+						  </li>
+						  <li class="nav-item">
+							<a class="nav-link" href="app-chat-box.html"><i class='bx bx-message'></i></a>
+						  </li>
+						  <li class="nav-item">
+							<a class="nav-link" href="app-fullcalender.html"><i class='bx bx-calendar'></i></a>
+						  </li>
+						  <li class="nav-item">
+							  <a class="nav-link" href="app-to-do.html"><i class='bx bx-check-square'></i></a>
+						  </li>
+					  </ul>
+					 </div>
+					<div class="search-bar flex-grow-1">
+						<div class="position-relative search-bar-box">
+							<input type="text" class="form-control search-control" placeholder="Type to search..."> <span class="position-absolute top-50 search-show translate-middle-y"><i class='bx bx-search'></i></span>
+							<span class="position-absolute top-50 search-close translate-middle-y"><i class='bx bx-x'></i></span>
+						</div>
+					</div> -->
+					<div class="top-menu ms-auto">
+						<ul class="navbar-nav align-items-center" >
+							<li class="nav-item">
+								<p class="mb-0 text-info">WhatsApp Kredit: 816,247 (Bisa Mengundang 1484 Orang)</p>
+							</li>
+							
+							<li class="nav-item dropdown dropdown-large" style="display: none;">
+								<a class="nav-link dropdown-toggle dropdown-toggle-nocaret position-relative" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> <span class="alert-count">8</span>
+									<i class='lni lni-headphone'></i>
+								</a>
+								<div class="dropdown-menu dropdown-menu-end">
+									<a href="javascript:;">
+										<div class="msg-header">
+											<p class="msg-header-title">Messages</p>
+											<p class="msg-header-clear ms-auto">Marks all as read</p>
+										</div>
+									</a>
+									<div class="header-message-list">
+										<a class="dropdown-item" href="javascript:;">
+											<div class="d-flex align-items-center">
+												<div class="user-online">
+													<img src="assets/images/avatars/avatar-1.png" class="msg-avatar" alt="user avatar">
+												</div>
+												<div class="flex-grow-1">
+													<h6 class="msg-name">Daisy Anderson <span class="msg-time float-end">5 sec
+												ago</span></h6>
+													<p class="msg-info">The standard chunk of lorem</p>
+												</div>
+											</div>
+										</a>
+									</div>
+									<a href="javascript:;">
+										<div class="text-center msg-footer">View All Messages</div>
+									</a>
+								</div>
+							</li>
+							<li class="nav-item dropdown dropdown-large" style="display: none;">
+								<a class="nav-link dropdown-toggle dropdown-toggle-nocaret position-relative" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> <span class="alert-count">7</span>
+									<i class='bx bx-bell'></i>
+								</a>
+								<div class="dropdown-menu dropdown-menu-end">
+									<a href="javascript:;">
+										<div class="msg-header">
+											<p class="msg-header-title">Notifications</p>
+											<p class="msg-header-clear ms-auto">Marks all as read</p>
+										</div>
+									</a>
+									<div class="header-notifications-list">
+										<a class="dropdown-item" href="javascript:;">
+											<div class="d-flex align-items-center">
+												<div class="notify bg-light-primary text-primary"><i class="bx bx-group"></i>
+												</div>
+												<div class="flex-grow-1">
+													<h6 class="msg-name">New Customers<span class="msg-time float-end">14 Sec
+												ago</span></h6>
+													<p class="msg-info">5 new user registered</p>
+												</div>
+											</div>
+										</a>
+									</div>
+									<a href="javascript:;">
+										<div class="text-center msg-footer">View All Notifications</div>
+									</a>
+								</div>
+							</li>
+							
+						</ul>
+					</div>
+					<div class="user-box dropdown">
+						<a class="d-flex align-items-center nav-link dropdown-toggle dropdown-toggle-nocaret" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+							<img src="assets/images/avatars/nanda.jpg" class="user-img" alt="user avatar">
+							<div class="user-info ps-3">
+								<p class="user-name mb-0">Nanda Raditya</p>
+								<p class="designattion mb-0">UI/UX Designer</p>
+							</div>
+						</a>
+						<ul class="dropdown-menu dropdown-menu-end">
+							<li><a class="dropdown-item" href="javascript:;"><i class="bx bx-user"></i><span>Profile</span></a>
+							</li>
+							<li><a class="dropdown-item" href="javascript:;"><i class='bx bx-help-circle'></i><span>Help Desk</span></a>
+								<li>
+							<li><a class="dropdown-item" href="javascript:;"><i class="bx bx-lock"></i><span>Change Password</span></a>
+							</li>
+							
+								<div class="dropdown-divider mb-0"></div>
+							</li>
+							<li><a class="dropdown-item" href="javascript:;"><i class='bx bx-log-out-circle'></i><span>Logout</span></a>
+							</li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+		</header>
+		<!--end header -->
+		<!--start page wrapper -->
+		<div class="page-wrapper">
+			<div class="page-content">
+				<!--breadcrumb-->
+				<div class="page-breadcrumb d-none d-sm-flex align-items-center mb-3">
+					<div class="breadcrumb-title pe-3">Management User</div>
+					<div class="ps-3">
+						<nav aria-label="breadcrumb">
+							<ol class="breadcrumb mb-0 p-0">
+							  <li class="breadcrumb-item"><a href="applicant-data.html"><i class="bx bx-home-alt"></i></a>
+							  </li>
+							  <li class="breadcrumb-item active" aria-current="page">Management User</li>
+							</ol>
+						  </nav>
+					</div>
+				</div>
+				<!--end breadcrumb-->
+
+				<div class="card radius-10">
+					<div class="card-body">
+						<div class="d-flex align-items-center">
+							<div>
+								<h5 class="mb-0">Management User</h5>
+							</div>
+							<div class="ms-auto mt-2">
+								<!-- <button type="button" class="btn btn-primary radius-8 d-flex align-items-center" data-bs-toggle="modal" data-bs-target="#addNewQuestion"><i class="bx bx-plus"></i>Add New</button> -->
+								<a type="button" class="btn btn-primary radius-8 d-flex align-items-center" data-bs-toggle="modal" data-bs-target="#modalAddNewUser"><i class="bx bx-plus"></i>Add New</a>
+							</div>
+						</div>
+						<div class="">
+							<div id="printbar" style="float:right"></div>
+							<br>
+							<table id="tableManagementUser" class="table mb-0 align-middle" style="width:100%">
+								<thead class="table-light">
+									<tr>
+										<th>No</th>
+										<th>User ID</th>
+										<th>Username</th>
+										<th>Email</th>
+										<th>Remarks</th>
+										<th>Action</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>1</td>
+										<td>w-888</td>
+										<td>w-888</td>
+										<td>nanda.raditya@advantagescm.com</td>
+										<td>Lorem Ipsum</td>
+										<td>
+											<div class="d-flex order-actions">
+												<a type="button" class="text-primary bg-light-primary border-0 me-3" data-bs-toggle="modal" data-bs-target="#modalEditUser"><i class="bx bxs-edit"></i></a>
+												<a type="button" class="text-danger bg-light-danger border-0" data-bs-toggle="modal" data-bs-target="#modalDelete"><i class="bx bxs-trash"></i></a>
+											</div>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+				
+
+				<!-- Modal Box Add New User -->
+				<div class="modal fade" id="modalAddNewUser" tabindex="-1"
+					aria-labelledby="modalAddNewUserLabel" aria-hidden="true">
+					<div class="modal-dialog modal-xl">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title" id="modalAddNewUserLabel">Add New User</h5>
+								<button type="button" class="btn-close" data-bs-dismiss="modal"
+									aria-label="Close"></button>
+							</div>
+							<div class="modal-body">
+								<div class="row">
+									<div class="col-12 col-lg-3 mb-3">
+										<label for="userId" class="form-label">User ID</label>
+										<input type="text" class="form-control" id="userId" placeholder="User ID">
+									</div>
+									<div class="col-12 col-lg-3 mb-3">
+										<label for="username" class="form-label">Username</label>
+										<input type="text" class="form-control" id="username" placeholder="Username">
+									</div>
+									<div class="col-12 col-lg-3 mb-3">
+										<label for="email" class="form-label">Email</label>
+										<input type="text" class="form-control" id="email" placeholder="Email">
+									</div>
+									<div class="col-12 col-lg-3 mb-3">
+										<label for="phoneNumber" class="form-label">Phone Number</label>
+										<input type="number" class="form-control" id="phoneNumber" placeholder="Phone Number">
+									</div>
+									<div class="col-12 col-lg-6 mb-3">
+										<label for="inputChoosePassword" class="form-label">Password</label>
+										<div class="input-group" id="show_hide_password">
+											<input type="password" class="form-control border-end-0" id="inputChoosePassword" placeholder="Enter Password"> <a href="javascript:;" class="input-group-text bg-transparent"><i class='bx bx-hide'></i></a>
+										</div>
+									</div>
+									<div class="col-12 col-lg-6 mb-3">
+										<label for="confirmPassword" class="form-label">Confirm Password</label>
+										<div class="input-group" id="show_hide_confirm">
+											<input type="password" class="form-control border-end-0" id="confirmPassword" placeholder="Confirm Password"> <a href="javascript:;" class="input-group-text bg-transparent"><i class='bx bx-hide'></i></a>
+										</div>
+									</div>
+									<div class="col-12 col-lg-12 mb-3">
+										<label for="remarks" class="form-label">Remarks</label>
+										<textarea class="form-control" id="remarks" placeholder="Remarks" rows="3"></textarea>
+									</div>
+									<div class="col-12 col-lg-4 mb-3">
+										<label class="form-label">Status</label>
+										<div class="d-flex">
+											<div class="form-check me-2">
+												<input class="form-check-input" type="radio" name="flexRadioStatus" id="radioActiveStatus">
+												<label class="form-check-label" for="radioActiveStatus">Active</label>
+											</div>
+											<div class="form-check">
+												<input class="form-check-input" type="radio" name="flexRadioStatus" id="radioInactiveStatus">
+												<label class="form-check-label" for="radioInactiveStatus">Inactive</label>
+											</div>
+										</div>
+									</div>
+									<div class="col-12 col-lg-4 mb-3">
+										<label class="form-label">Login Status</label>
+										<div class="d-flex">
+											<div class="form-check me-2">
+												<input class="form-check-input" type="radio" name="flexRadioLogin" id="radioAllowLogin">
+												<label class="form-check-label" for="radioAllowLogin">Allow</label>
+											</div>
+											<div class="form-check">
+												<input class="form-check-input" type="radio" name="flexRadioLogin" id="radioLockedLogin">
+												<label class="form-check-label" for="radioLockedLogin">Locked</label>
+											</div>
+										</div>
+									</div>
+									<div class="col-12 col-lg-4 mb-3">
+										<label class="form-label" for="radioLockedLogin">Role</label>
+										<div class="d-flex">
+											<div class="form-check me-3">
+												<input class="form-check-input" type="checkbox" value="" id="flexCheckAdmin">
+												<label class="form-check-label" for="flexCheckAdmin">Admin</label>
+											</div>
+											<div class="form-check">
+												<input class="form-check-input" type="checkbox" value="" id="flexCheckAdminQuiz">
+												<label class="form-check-label" for="flexCheckAdminQuiz">Admin Quiz</label>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							
+							<div class="modal-footer">
+								<button type="button" class="btn btn-secondary"
+									data-bs-dismiss="modal">Close</button>
+								<button type="button" class="btn btn-primary">Save</button>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Modal Box Edit User -->
+				<div class="modal fade" id="modalEditUser" tabindex="-1"
+					aria-labelledby="modalEditUserLabel" aria-hidden="true">
+					<div class="modal-dialog modal-xl">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title" id="modalEditUserLabel">Add New User</h5>
+								<button type="button" class="btn-close" data-bs-dismiss="modal"
+									aria-label="Close"></button>
+							</div>
+							<div class="modal-body">
+								<div class="row">
+									<div class="col-12 col-lg-3 mb-3">
+										<label for="userId" class="form-label">User ID</label>
+										<input type="text" class="form-control" id="userId" value="w-69">
+									</div>
+									<div class="col-12 col-lg-3 mb-3">
+										<label for="username" class="form-label">Username</label>
+										<input type="text" class="form-control" id="username" value="nandaradityaya">
+									</div>
+									<div class="col-12 col-lg-3 mb-3">
+										<label for="email" class="form-label">Email</label>
+										<input type="text" class="form-control" id="email" value="nanda.raditya@advantagescm.com">
+									</div>
+									<div class="col-12 col-lg-3 mb-3">
+										<label for="phoneNumber" class="form-label">Phone Number</label>
+										<input type="number" class="form-control" id="phoneNumber" value="081234567890">
+									</div>
+									<div class="col-12 col-lg-6 mb-3">
+										<label for="inputChoosePassword" class="form-label">Password</label>
+										<div class="input-group" id="show_hide_password">
+											<input type="password" class="form-control border-end-0" id="inputChoosePassword" value="12345678"> <a href="javascript:;" class="input-group-text bg-transparent"><i class='bx bx-hide'></i></a>
+										</div>
+									</div>
+									<div class="col-12 col-lg-6 mb-3">
+										<label for="confirmPassword" class="form-label">Confirm Password</label>
+										<div class="input-group" id="show_hide_confirm">
+											<input type="password" class="form-control border-end-0" id="confirmPassword"value="12345678"> <a href="javascript:;" class="input-group-text bg-transparent"><i class='bx bx-hide'></i></a>
+										</div>
+									</div>
+									<div class="col-12 col-lg-12 mb-3">
+										<label for="remarks" class="form-label">Remarks</label>
+										<textarea class="form-control" id="remarks" placeholder="Remarks" rows="3">Lorem Ipsum</textarea>
+									</div>
+									<div class="col-12 col-lg-4 mb-3">
+										<label class="form-label">Status</label>
+										<div class="d-flex">
+											<div class="form-check me-2">
+												<input class="form-check-input" type="radio" name="flexRadioStatusEdit" id="radioActiveStatusEdit">
+												<label class="form-check-label" for="radioActiveStatusEdit">Active</label>
+											</div>
+											<div class="form-check">
+												<input class="form-check-input" type="radio" name="flexRadioStatusEdit" id="radioInactiveStatusEdit">
+												<label class="form-check-label" for="radioInactiveStatusEdit">Inactive</label>
+											</div>
+										</div>
+									</div>
+									<div class="col-12 col-lg-4 mb-3">
+										<label class="form-label">Login Status</label>
+										<div class="d-flex">
+											<div class="form-check me-2">
+												<input class="form-check-input" type="radio" name="flexRadioLoginEdit" id="radioAllowLoginEdit">
+												<label class="form-check-label" for="radioAllowLoginEdit">Allow</label>
+											</div>
+											<div class="form-check">
+												<input class="form-check-input" type="radio" name="flexRadioLoginEdit" id="radioLockedLoginEdit">
+												<label class="form-check-label" for="radioLockedLoginEdit">Locked</label>
+											</div>
+										</div>
+									</div>
+									<div class="col-12 col-lg-4 mb-3">
+										<label class="form-label" for="radioLockedLogin">Role</label>
+										<div class="d-flex">
+											<div class="form-check me-3">
+												<input class="form-check-input" type="checkbox" value="" id="flexCheckAdminEdit">
+												<label class="form-check-label" for="flexCheckAdminEdit">Admin</label>
+											</div>
+											<div class="form-check">
+												<input class="form-check-input" type="checkbox" value="" id="flexCheckAdminQuizEdit">
+												<label class="form-check-label" for="flexCheckAdminQuizEdit">Admin Quiz</label>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							
+							<div class="modal-footer">
+								<button type="button" class="btn btn-secondary"
+									data-bs-dismiss="modal">Close</button>
+								<button type="button" class="btn btn-primary">Save</button>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Modal Box Delete -->
+				<div class="modal fade" id="modalDelete" tabindex="-1" aria-labelledby="modalDeleteLabel" aria-hidden="true">
+					<div class="modal-dialog modal-lg">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title" id="modalDeleteLabel">Delete Question</h5>
+								<button type="button" class="btn-close" data-bs-dismiss="modal"
+									aria-label="Close"></button>
+							</div>
+							<div class="modal-body">
+								Are you sure want to delete this package?
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-secondary radius-8"
+									data-bs-dismiss="modal">Cancel</button>
+								<button type="button" class="btn btn-danger radius-8">Delete</button>
+							</div>
+						</div>
+					</div>
+				</div>
+
+		</div>
+		<!--end page wrapper -->
+		<!--start overlay-->
+		<div class="overlay toggle-icon"></div>
+		<!--end overlay-->
+		<!--Start Back To Top Button--> <a href="javaScript:;" class="back-to-top"><i class='bx bxs-up-arrow-alt'></i></a>
+		<!--End Back To Top Button-->
+		<footer class="page-footer">
+			<p class="mb-0">Copyright © 2023. All right reserved.</p>
+		</footer>
+	</div>
+	<!--end wrapper-->
+	<!-- Bootstrap JS -->
+	<script src="assets/js/bootstrap.bundle.min.js"></script>
+	<!--plugins-->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/plugins/simplebar/js/simplebar.min.js"></script>
+	<script src="assets/plugins/fullcalendar/js/main.min.js"></script>
+	<script src="assets/plugins/metismenu/js/metisMenu.min.js"></script>
+	<script src="assets/plugins/perfect-scrollbar/js/perfect-scrollbar.js"></script>
+	<script src="assets/libraries/gijgo/js/gijgo.min.js"></script>
+	<script src="assets/plugins/select2/js/select2.min.js"></script>
+	<script src="assets/plugins/datatable/js/jquery.dataTables.min.js"></script>
+	<script src="assets/plugins/datatable/js/dataTables.bootstrap5.min.js"></script>
+	<script src="assets/plugins/datetimepicker/js/legacy.js"></script>
+	<script src="assets/plugins/datetimepicker/js/picker.js"></script>
+	<script src="assets/plugins/datetimepicker/js/picker.time.js"></script>
+	<script src="assets/plugins/datetimepicker/js/picker.date.js"></script>
+	<script src="assets/plugins/bootstrap-material-datetimepicker/js/moment.min.js"></script>
+	<script src="assets/plugins/bootstrap-material-datetimepicker/js/bootstrap-material-datetimepicker.min.js"></script>
+	<script type="text/javascript" src="assets/plugins/richtexteditor/rte.js"></script>
+	<script type="text/javascript" src='assets/plugins/richtexteditor/plugins/all_plugins.js'></script>
+
+	<script src="assets/js/index4.js"></script>
+	<script src="assets/js/toggle-button.js"></script>
+	<script>
+		$(document).ready(function () {
+			$("#show_hide_password a").on('click', function (event) {
+				event.preventDefault();
+				if ($('#show_hide_password input').attr("type") == "text") {
+					$('#show_hide_password input').attr('type', 'password');
+					$('#show_hide_password i').addClass("bx-hide");
+					$('#show_hide_password i').removeClass("bx-show");
+				} else if ($('#show_hide_password input').attr("type") == "password") {
+					$('#show_hide_password input').attr('type', 'text');
+					$('#show_hide_password i').removeClass("bx-hide");
+					$('#show_hide_password i').addClass("bx-show");
+				}
+			});
+
+			$("#show_hide_confirm a").on('click', function (event) {
+				event.preventDefault();
+				if ($('#show_hide_confirm input').attr("type") == "text") {
+					$('#show_hide_confirm input').attr('type', 'password');
+					$('#show_hide_confirm i').addClass("bx-hide");
+					$('#show_hide_confirm i').removeClass("bx-show");
+				} else if ($('#show_hide_confirm input').attr("type") == "password") {
+					$('#show_hide_confirm input').attr('type', 'text');
+					$('#show_hide_confirm i').removeClass("bx-hide");
+					$('#show_hide_confirm i').addClass("bx-show");
+				}
+			});
+		});
+	</script>
+	<script>
+		$('.single-select').select2({
+			theme: 'bootstrap4',
+			width: $(this).data('width') ? $(this).data('width') : $(this).hasClass('w-100') ? '100%' : 'style',
+			placeholder: $(this).data('placeholder'),
+			allowClear: Boolean($(this).data('allow-clear')),
+		});
+		$('.multiple-select').select2({
+			theme: 'bootstrap4',
+			width: $(this).data('width') ? $(this).data('width') : $(this).hasClass('w-100') ? '100%' : 'style',
+			placeholder: $(this).data('placeholder'),
+			allowClear: Boolean($(this).data('allow-clear')),
+		});
+		$('#multipleSelect').select2({
+			dropdownParent: $('#addNewQuestionPackage'),
+			theme: 'bootstrap4',
+			width: $(this).data('width') ? $(this).data('width') : $(this).hasClass('w-100') ? '100%' : 'style',
+			placeholder: $(this).data('placeholder'),
+			allowClear: Boolean($(this).data('allow-clear')),
+		});
+		$('#singleSelect').select2({
+			dropdownParent: $('#addNewQuestion'),
+			theme: 'bootstrap4',
+			width: $(this).data('width') ? $(this).data('width') : $(this).hasClass('w-100') ? '100%' : 'style',
+			placeholder: $(this).data('placeholder'),
+			allowClear: Boolean($(this).data('allow-clear')),
+		});
+
+		$('#singleSelectEdit').select2({
+			dropdownParent: $('#editGroupQuestion'),
+			theme: 'bootstrap4',
+			width: $(this).data('width') ? $(this).data('width') : $(this).hasClass('w-100') ? '100%' : 'style',
+			placeholder: $(this).data('placeholder'),
+			allowClear: Boolean($(this).data('allow-clear')),
+		});
+		
+	</script>
+	<script>
+
+		$(document).ready(function () {
+			var table = $('#tableManagementUser').DataTable({
+			});
+		});
+		
+	</script>
+	<script>
+		$(document).ready(function () {
+			$("#startDateFilterInstruction").datepicker({
+				uiLibrary: "bootstrap4",
+				icons: {
+					rightIcon: '<img src="assets/images/icons/calendar-days.svg" />'
+				}
+			})
+
+			$("#endDateFilterInstruction").datepicker({
+				uiLibrary: "bootstrap4",
+				icons: {
+					rightIcon: '<img src="assets/images/icons/calendar-days.svg" />'
+				}
+			})
+
+		});
+	</script>
+	<script>
+		$('.datepicker').pickadate({
+			selectMonths: true,
+	        selectYears: true
+		}),
+		$('.timepicker').pickatime()
+	</script>
+	<script>
+		$(function () {
+			$('#date-time').bootstrapMaterialDatePicker({
+				format: 'YYYY-MM-DD HH:mm'
+			});
+			$('#date').bootstrapMaterialDatePicker({
+				time: false
+			});
+			$('#timePsikotest').bootstrapMaterialDatePicker({
+				date: false,
+				format: 'HH:mm'
+			});
+			$('#timeInterview').bootstrapMaterialDatePicker({
+				date: false,
+				format: 'HH:mm'
+			});
+			$('#editTimeInterview').bootstrapMaterialDatePicker({
+				date: false,
+				format: 'HH:mm'
+			});
+		});
+	</script>
+
+
+	<!--app JS-->
+	<script src="assets/js/app.js"></script>
+</body>
+
+</html>
