@@ -21,6 +21,7 @@
 	<link href="assets/plugins/datetimepicker/css/classic.time.css" rel="stylesheet" />
 	<link href="assets/plugins/datetimepicker/css/classic.date.css" rel="stylesheet" />
 	<link rel="stylesheet" href="assets/plugins/bootstrap-material-datetimepicker/css/bootstrap-material-datetimepicker.min.css">
+	<link rel="stylesheet" href="assets/plugins/richtexteditor/rte_theme_default.css" />
 	<!-- loader-->
 	<link href="assets/css/pace.min.css" rel="stylesheet" />
 	<script src="assets/js/pace.min.js"></script>
@@ -257,104 +258,55 @@
 			<div class="page-content">
 				<!--breadcrumb-->
 				<div class="page-breadcrumb d-none d-sm-flex align-items-center mb-3">
-					<div class="breadcrumb-title pe-3">Questions</div>
+					<div class="breadcrumb-title pe-3">Management User</div>
 					<div class="ps-3">
 						<nav aria-label="breadcrumb">
 							<ol class="breadcrumb mb-0 p-0">
-								<li class="breadcrumb-item"><a href="javascript:;"><i class="bx bx-home-alt"></i></a>
-								</li>
-								<li class="breadcrumb-item active" aria-current="page">Questions Package</li>
+							  <li class="breadcrumb-item"><a href="applicant-data.html"><i class="bx bx-home-alt"></i></a>
+							  </li>
+							  <li class="breadcrumb-item active" aria-current="page">Management User</li>
 							</ol>
-						</nav>
+						  </nav>
 					</div>
 				</div>
 				<!--end breadcrumb-->
 
 				<div class="card radius-10">
-					<div class="card-header">
-						<div class="row mb-3">
-							<div class="col-12 col-lg-4">
-								<label for="filerDateAwal" class="form-label">Start Date
-									Created</label>
-								<div class="input-group mb-2">
-									<input type="text" class="form-control" id="startDateCreatedQuestion"
-										placeholder="dd/mm/yyyy">
-								</div>
-							</div>
-							<div class="col-12 col-lg-4">
-								<label for="filerDateAwal" class="form-label">End Date
-									Created</label>
-								<div class="input-group mb-2">
-									<input type="text" class="form-control" id="endDateCreatedQuestion"
-										placeholder="dd/mm/yyyy">
-								</div>
-							</div>
-							<div class="col-12 col-lg-4">
-								<label class="form-label">Status</label>
-								<select class="single-select form-select">
-									<option value="all">All</option>
-									<option value="recommended">Active</option>
-									<option value="notRecommended">Inactive</option>
-								</select>
-							</div>
-						</div>
-					</div>
 					<div class="card-body">
 						<div class="d-flex align-items-center">
 							<div>
-								<h5 class="font-weight-bold mb-0">Question Package</h5>
+								<h5 class="mb-0">User Role</h5>
 							</div>
 							<div class="ms-auto mt-2">
-								<button type="button" class="btn btn-primary radius-8 d-flex align-items-center" data-bs-toggle="modal" data-bs-target="#addNewQuestionPackage"><i class="bx bx-plus"></i>Add New</button>
+								<!-- <button type="button" class="btn btn-primary radius-8 d-flex align-items-center" data-bs-toggle="modal" data-bs-target="#addNewQuestion"><i class="bx bx-plus"></i>Add New</button> -->
+								<a type="button" class="btn btn-primary radius-8 d-flex align-items-center" data-bs-toggle="modal" data-bs-target="#modalAddNewRole"><i class="bx bx-plus"></i>Add New</a>
 							</div>
 						</div>
-						<div class="table-responsive">
+						<div class="">
 							<div id="printbar" style="float:right"></div>
 							<br>
-							<table id="questionsPackageTable" class="table mb-0 align-middle" style="width:100%">
+							<table id="tableUserRole" class="table mb-0 align-middle" style="width:100%">
 								<thead class="table-light">
 									<tr>
 										<th>No</th>
-										<th>No. Package</th>
-										<th>Name</th>
-										<th>Position</th>
-										<th>Time (Minutes)</th>
-										<th>Status</th>
-										<th>User Input</th>
-										<th>Time Input</th>
+										<th>Role</th>
+										<th>Description</th>
+										<th>Last Update</th>
 										<th>Action</th>
 									</tr>
 								</thead>
 								<tbody>
 									<tr>
 										<td>1</td>
-										<td>4011</td>
-										<td>ATRA</td>
-										<td>Finance, Audit, HRD</td>
-										<td>60</td>
-										<td><div class="badge rounded-pill text-success bg-light-success p-2 text-uppercase px-3">
-											Active</div></td>
-										<td>w-888</td>
-										<td>20 Jan 2024</td>
-										<td><div class="d-flex order-actions">
-											<a href="package-group.html" class="text-primary bg-light-primary border-0 me-3"><i class="bx bxs-edit"></i></a>
-											<a type="button" class="text-danger bg-light-danger border-0" data-bs-toggle="modal" data-bs-target="#modalDelete"><i class="bx bxs-trash"></i></a>
-										</div></td>
-									</tr>
-									<tr>
-										<td>2</td>
-										<td>4012</td>
-										<td>MIRO</td>
-										<td>IT, Marketing, Legal</td>
-										<td>60</td>
-										<td><div class="badge rounded-pill text-secondary bg-light-secondary p-2 text-uppercase px-3">
-											Inactive</div></td>
-										<td>w-888</td>
-										<td>20 Jan 2024</td>
-										<td><div class="d-flex order-actions">
-											<a href="package-group.html" class="text-primary bg-light-primary border-0 me-3"><i class="bx bxs-edit"></i></a>
-											<a type="button" class="text-danger bg-light-danger border-0" data-bs-toggle="modal" data-bs-target="#modalDelete"><i class="bx bxs-trash"></i></a>
-										</div></td>
+										<td>Admin</td>
+										<td>Master Admin</td>
+										<td>23 Feb 2024</td>
+										<td>
+											<div class="d-flex order-actions">
+												<a type="button" class="text-primary bg-light-primary border-0 me-3" data-bs-toggle="modal" data-bs-target="#modalEditRole"><i class="bx bxs-edit"></i></a>
+												<a type="button" class="text-danger bg-light-danger border-0" data-bs-toggle="modal" data-bs-target="#modalDelete"><i class="bx bxs-trash"></i></a>
+											</div>
+										</td>
 									</tr>
 								</tbody>
 							</table>
@@ -363,50 +315,51 @@
 				</div>
 				
 
-				<!-- Modal Box Add New Question Package -->
-				<div class="modal fade" id="addNewQuestionPackage" tabindex="-1"
-					aria-labelledby="addNewQuestionPackageLabel" aria-hidden="true">
-					<div class="modal-dialog modal-lg">
+				<!-- Modal Box Add New Role -->
+				<div class="modal fade" id="modalAddNewRole" tabindex="-1"
+					aria-labelledby="modalAddNewRoleLabel" aria-hidden="true">
+					<div class="modal-dialog">
 						<div class="modal-content">
 							<div class="modal-header">
-								<h5 class="modal-title" id="addNewQuestionPackageLabel">Add New Package</h5>
+								<h5 class="modal-title" id="modalAddNewRoleLabel">Add New Role</h5>
 								<button type="button" class="btn-close" data-bs-dismiss="modal"
 									aria-label="Close"></button>
 							</div>
 							<div class="modal-body">
-								<div class="row">
-									<div class="col-lg-6 col-md-12 col-sm-12 mb-3">
-										<label for="packageName" class="form-label">Package Name</label>
-										<input type="text" class="form-control" id="packageName" placeholder="Package Name...">
+								<div class="mb-3">
+									<label for="userRole" class="form-label">Role</label>
+									<input type="text" class="form-control" id="userRole" placeholder="Role">
+								</div>
+								<div class="mb-3">
+									<label for="description" class="form-label">Description</label>
+									<textarea class="form-control" id="description" placeholder="Remarks" rows="3"></textarea>
+								</div>
+								<div class="mb-3">
+									<label class="form-label" for="">Assign Menu</label>
+									<div class="form-check me-3">
+										<input class="form-check-input" type="checkbox" value="" id="flexCheckDataApplicant">
+										<label class="form-check-label" for="flexCheckDataApplicant">Data Applicant</label>
 									</div>
-									<div class="col-lg-6 col-md-12 col-sm-12 mb-3">
-										<label for="timePackage" class="form-label">Time (Minutes)</label>
-										<input type="number" class="form-control" id="timePackage" placeholder="Package Time...">
+									<div class="form-check">
+										<input class="form-check-input" type="checkbox" value="" id="flexCheckQuestion">
+										<label class="form-check-label" for="flexCheckQuestion">Question</label>
 									</div>
-									<div class="col-lg-6 col-md-12 col-sm-12 mb-3">
-										<label class="form-label">Position</label>
-										<select id="multipleSelect" class="" data-placeholder="Choose anything" multiple="multiple">
-											<option value="it">IT</option>
-											<option value="hrd">HRD</option>
-											<option value="finance">Finance</option>
-											<option value="audit">Audit</option>
-											<option value="legal">Legal</option>
-										</select>
+									<div class="form-check">
+										<input class="form-check-input" type="checkbox" value="" id="flexCheckInstruction">
+										<label class="form-check-label" for="flexCheckInstruction">Instruction</label>
 									</div>
-									<div class="col-lg-6 col-md-12 col-sm-12 mb-3">
-										<label class="form-label">Status</label>
-										<div class="d-flex">
-											<div class="form-check me-2">
-												<input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioActive">
-												<label class="form-check-label" for="flexRadioActive">Active</label>
-											</div>
-											<div class="form-check">
-												<input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioInactive">
-												<label class="form-check-label" for="flexRadioInactive">Inactive</label>
-											</div>
-										</div>
+									<div class="form-check">
+										<input class="form-check-input" type="checkbox" value="" id="flexCheckManagementUser">
+										<label class="form-check-label" for="flexCheckManagementUser">Management User</label>
 									</div>
-									
+									<div class="form-check">
+										<input class="form-check-input" type="checkbox" value="" id="flexCheckRole">
+										<label class="form-check-label" for="flexCheckRole">Management Role</label>
+									</div>
+									<div class="form-check">
+										<input class="form-check-input" type="checkbox" value="" id="flexCheckParameter">
+										<label class="form-check-label" for="flexCheckParameter">Parameter</label>
+									</div>
 								</div>
 							</div>
 							
@@ -419,12 +372,70 @@
 					</div>
 				</div>
 
+				<!-- Modal Box Edit Role -->
+				<div class="modal fade" id="modalEditRole" tabindex="-1"
+					aria-labelledby="modalEditRoleLabel" aria-hidden="true">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title" id="modalEditRoleLabel">Edit Role</h5>
+								<button type="button" class="btn-close" data-bs-dismiss="modal"
+									aria-label="Close"></button>
+							</div>
+							<div class="modal-body">
+								<div class="mb-3">
+									<label for="userRole" class="form-label">Role</label>
+									<input type="text" class="form-control" id="userRole" value="Admin">
+								</div>
+								<div class="mb-3">
+									<label for="description" class="form-label">Description</label>
+									<textarea class="form-control" id="description" placeholder="remarks" rows="3">Master Admin</textarea>
+								</div>
+								<div class="mb-3">
+									<label class="form-label" for="">Assign Menu</label>
+									<div class="form-check me-3">
+										<input class="form-check-input" type="checkbox" value="" id="flexCheckDataApplicantEdit">
+										<label class="form-check-label" for="flexCheckDataApplicantEdit">Data Applicant</label>
+									</div>
+									<div class="form-check">
+										<input class="form-check-input" type="checkbox" value="" id="flexCheckQuestionEdit">
+										<label class="form-check-label" for="flexCheckQuestionEdit">Question</label>
+									</div>
+									<div class="form-check">
+										<input class="form-check-input" type="checkbox" value="" id="flexCheckInstructionEdit">
+										<label class="form-check-label" for="flexCheckInstructionEdit">Instruction</label>
+									</div>
+									<div class="form-check">
+										<input class="form-check-input" type="checkbox" value="" id="flexCheckManagementUserEdit">
+										<label class="form-check-label" for="flexCheckManagementUserEdit">Management User</label>
+									</div>
+									<div class="form-check">
+										<input class="form-check-input" type="checkbox" value="" id="flexCheckRoleEdit">
+										<label class="form-check-label" for="flexCheckRoleEdit">Management Role</label>
+									</div>
+									<div class="form-check">
+										<input class="form-check-input" type="checkbox" value="" id="flexCheckParameterEdit">
+										<label class="form-check-label" for="flexCheckParameterEdit">Parameter</label>
+									</div>
+								</div>
+							</div>
+							
+							<div class="modal-footer">
+								<button type="button" class="btn btn-secondary"
+									data-bs-dismiss="modal">Close</button>
+								<button type="button" class="btn btn-primary">Save</button>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
 				<!-- Modal Box Delete -->
 				<div class="modal fade" id="modalDelete" tabindex="-1" aria-labelledby="modalDeleteLabel" aria-hidden="true">
 					<div class="modal-dialog modal-lg">
 						<div class="modal-content">
 							<div class="modal-header">
-								<h5 class="modal-title" id="modalDeleteLabel">Delete Package</h5>
+								<h5 class="modal-title" id="modalDeleteLabel">Delete Question</h5>
 								<button type="button" class="btn-close" data-bs-dismiss="modal"
 									aria-label="Close"></button>
 							</div>
@@ -470,19 +481,40 @@
 	<script src="assets/plugins/datetimepicker/js/picker.date.js"></script>
 	<script src="assets/plugins/bootstrap-material-datetimepicker/js/moment.min.js"></script>
 	<script src="assets/plugins/bootstrap-material-datetimepicker/js/bootstrap-material-datetimepicker.min.js"></script>
-	<!-- highcharts js -->
-	<script src="assets/plugins/highcharts/js/highcharts.js"></script>
-	<script src="assets/plugins/highcharts/js/highcharts-more.js"></script>
-	<script src="assets/plugins/highcharts/js/variable-pie.js"></script>
-	<script src="assets/plugins/highcharts/js/solid-gauge.js"></script>
-	<script src="assets/plugins/highcharts/js/highcharts-3d.js"></script>
-	<script src="assets/plugins/highcharts/js/cylinder.js"></script>
-	<script src="assets/plugins/highcharts/js/funnel3d.js"></script>
-	<script src="assets/plugins/highcharts/js/exporting.js"></script>
-	<script src="assets/plugins/highcharts/js/export-data.js"></script>
-	<script src="assets/plugins/highcharts/js/accessibility.js"></script>
+	<script type="text/javascript" src="assets/plugins/richtexteditor/rte.js"></script>
+	<script type="text/javascript" src='assets/plugins/richtexteditor/plugins/all_plugins.js'></script>
+
 	<script src="assets/js/index4.js"></script>
 	<script src="assets/js/toggle-button.js"></script>
+	<script>
+		$(document).ready(function () {
+			$("#show_hide_password a").on('click', function (event) {
+				event.preventDefault();
+				if ($('#show_hide_password input').attr("type") == "text") {
+					$('#show_hide_password input').attr('type', 'password');
+					$('#show_hide_password i').addClass("bx-hide");
+					$('#show_hide_password i').removeClass("bx-show");
+				} else if ($('#show_hide_password input').attr("type") == "password") {
+					$('#show_hide_password input').attr('type', 'text');
+					$('#show_hide_password i').removeClass("bx-hide");
+					$('#show_hide_password i').addClass("bx-show");
+				}
+			});
+
+			$("#show_hide_confirm a").on('click', function (event) {
+				event.preventDefault();
+				if ($('#show_hide_confirm input').attr("type") == "text") {
+					$('#show_hide_confirm input').attr('type', 'password');
+					$('#show_hide_confirm i').addClass("bx-hide");
+					$('#show_hide_confirm i').removeClass("bx-show");
+				} else if ($('#show_hide_confirm input').attr("type") == "password") {
+					$('#show_hide_confirm input').attr('type', 'text');
+					$('#show_hide_confirm i').removeClass("bx-hide");
+					$('#show_hide_confirm i').addClass("bx-show");
+				}
+			});
+		});
+	</script>
 	<script>
 		$('.single-select').select2({
 			theme: 'bootstrap4',
@@ -503,30 +535,47 @@
 			placeholder: $(this).data('placeholder'),
 			allowClear: Boolean($(this).data('allow-clear')),
 		});
+		$('#singleSelect').select2({
+			dropdownParent: $('#addNewQuestion'),
+			theme: 'bootstrap4',
+			width: $(this).data('width') ? $(this).data('width') : $(this).hasClass('w-100') ? '100%' : 'style',
+			placeholder: $(this).data('placeholder'),
+			allowClear: Boolean($(this).data('allow-clear')),
+		});
+
+		$('#singleSelectEdit').select2({
+			dropdownParent: $('#editGroupQuestion'),
+			theme: 'bootstrap4',
+			width: $(this).data('width') ? $(this).data('width') : $(this).hasClass('w-100') ? '100%' : 'style',
+			placeholder: $(this).data('placeholder'),
+			allowClear: Boolean($(this).data('allow-clear')),
+		});
 		
 	</script>
 	<script>
+
 		$(document).ready(function () {
-			var table = $('#questionsPackageTable').DataTable({
+			var table = $('#tableUserRole').DataTable({
 			});
 		});
 		
 	</script>
 	<script>
 		$(document).ready(function () {
-			$("#startDateCreatedQuestion").datepicker({
+			$("#startDateFilterInstruction").datepicker({
 				uiLibrary: "bootstrap4",
 				icons: {
 					rightIcon: '<img src="assets/images/icons/calendar-days.svg" />'
 				}
 			})
 
-			$("#endDateCreatedQuestion").datepicker({
+			$("#endDateFilterInstruction").datepicker({
 				uiLibrary: "bootstrap4",
 				icons: {
 					rightIcon: '<img src="assets/images/icons/calendar-days.svg" />'
 				}
 			})
+
 		});
 	</script>
 	<script>

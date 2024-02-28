@@ -292,6 +292,7 @@
 										<th>User ID</th>
 										<th>Username</th>
 										<th>Email</th>
+										<th>Status</th>
 										<th>Remarks</th>
 										<th>Action</th>
 									</tr>
@@ -301,7 +302,28 @@
 										<td>1</td>
 										<td>w-888</td>
 										<td>w-888</td>
+										<td>cahyadi@advantagescm.com</td>
+										<td>
+											<div class="badge rounded-pill text-success bg-light-success p-2 text-uppercase px-3">
+												Active</div>
+										</td>
+										<td>Lorem Ipsum</td>
+										<td>
+											<div class="d-flex order-actions">
+												<a type="button" class="text-primary bg-light-primary border-0 me-3" data-bs-toggle="modal" data-bs-target="#modalEditUser"><i class="bx bxs-edit"></i></a>
+												<a type="button" class="text-danger bg-light-danger border-0" data-bs-toggle="modal" data-bs-target="#modalDelete"><i class="bx bxs-trash"></i></a>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td>2</td>
+										<td>w-69</td>
+										<td>nandaradityaya</td>
 										<td>nanda.raditya@advantagescm.com</td>
+										<td>
+											<div class="badge rounded-pill text-secondary bg-light-secondary p-2 text-uppercase px-3">
+												Inactive</div>
+										</td>
 										<td>Lorem Ipsum</td>
 										<td>
 											<div class="d-flex order-actions">
@@ -388,7 +410,7 @@
 										</div>
 									</div>
 									<div class="col-12 col-lg-4 mb-3">
-										<label class="form-label" for="radioLockedLogin">Role</label>
+										<label class="form-label" for="">Role</label>
 										<div class="d-flex">
 											<div class="form-check me-3">
 												<input class="form-check-input" type="checkbox" value="" id="flexCheckAdmin">
