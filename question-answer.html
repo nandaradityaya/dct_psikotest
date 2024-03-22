@@ -160,9 +160,6 @@
 					</div> -->
 					<div class="top-menu ms-auto">
 						<ul class="navbar-nav align-items-center" >
-							<li class="nav-item">
-								<p class="mb-0 text-info">WhatsApp Kredit: 816,247 (Bisa Mengundang 1484 Orang)</p>
-							</li>
 							
 							<li class="nav-item dropdown dropdown-large" style="display: none;">
 								<a class="nav-link dropdown-toggle dropdown-toggle-nocaret position-relative" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> <span class="alert-count">8</span>
@@ -389,19 +386,43 @@
 							<input type="text" class="form-control is-invalid" placeholder="Title...">
 							<div class="invalid-feedback">Please enter a title.</div>
 						</div>
+
+						
+						
 						<div class="question-one" id="wrapperQuestion">
 							<div class="card radius-10 mb-4" id="sectionQuestion">
 								<div class="card-body order-actions">
+									<!-- <div class="mb-3">
+										<h6 class="text-black">Question 1</h6>
+										<textarea class="form-control bg-light-secondary" id="inputQuestionArea" placeholder="Input Question..." rows="2"></textarea>
+									</div>
+									<div class="mb-3">
+										<img class="mb-2" id="imgQuestion" src="assets/images/gallery/placeholder-image.jpg" alt="image question" />
+										<input class="form-control" type="file" onchange="readURL(this);" id="formFile">
+									</div> -->
 									<div class="row mb-3">
 										<div class="col-12 col-lg-6">
 											<h6 class="text-black">Question 1</h6>
-											<textarea class="form-control bg-light-secondary" id="inputQuestionArea" placeholder="Input Question..." rows="1"></textarea>
+											<textarea class="form-control bg-light-secondary" id="inputQuestionArea" placeholder="Input Question..." rows="2"></textarea>
 										</div>
 										<div class="col-12 col-lg-6">
 											<label for="formFile" class="form-label">Image</label>
 											<input class="form-control" type="file" id="formFile">
 										</div>
 									</div>
+									<!-- <div class="mb-3">
+										<h6 class="text-black">Question 1</h6>
+										<textarea class="form-control bg-light-secondary" id="inputQuestionArea" placeholder="Input Question..." rows="2"></textarea>
+									</div>
+									<div class="container-qna">
+										<input type="file" id="imageQNA" accept="image/*" hidden>
+										<div class="img-area-qna" data-img="">
+											<i class='bx bxs-cloud-upload icon'></i>
+											<h3>Upload Image</h3>
+											<p>select image if this question has an image</p>
+										</div>
+										<button class="select-image btn btn-primary">Select Image</button>
+									</div> -->
 									<hr>
 									<div class="card radius-10 mb-2">
 										<div class="card-body">
@@ -621,6 +642,7 @@
 	<script src="assets/js/index4.js"></script>
 	<script src="assets/js/toggle-button.js"></script>
 	<script src="assets/js/addMore.js"></script>
+	<script src="assets/js/uploadImageQnA.js"></script>
 	<script>
 		$('.single-select').select2({
 			theme: 'bootstrap4',

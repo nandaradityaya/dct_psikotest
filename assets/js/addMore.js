@@ -14,7 +14,7 @@ addMoreBtn.addEventListener("click", function () {
       <div class="row mb-3">
             <div class="col-12 col-lg-6">
             <h6 class="text-black">Question ${cardCount + 1}</h6>
-            <textarea class="form-control bg-light-secondary" id="inputQuestionArea" placeholder="Input Question..." rows="1"></textarea>
+            <textarea class="form-control bg-light-secondary" id="inputQuestionArea" placeholder="Input Question..." rows="2"></textarea>
         </div>
         <div class="col-12 col-lg-6">
             <label for="formFile" class="form-label">Image</label>

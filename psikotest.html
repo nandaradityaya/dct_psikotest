@@ -73,11 +73,38 @@
     <title>DCT WEB</title>
   </head>
 
-  <body>
+  <body
+    style="
+      background-image: url(assets/images/gallery/bg-psikotest-v3.jpg);
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+    "
+  >
     <!--wrapper-->
     <div class="wrapper">
-      <div class="mx-5">
-        <div class="card transition radius-10" id="startPostTest">
+      <img
+        src="assets/images/gallery/plus.svg"
+        alt=""
+        class="icon-plus-bg"
+        width="20"
+      />
+      <img
+        src="assets/images/gallery/round.svg"
+        alt=""
+        class="icon-round-bg"
+        width="20"
+      />
+      <div class="pt-4 text-center">
+        <a href="#" class="text-primary" style="font-family: 'Segoe UI Black'">
+          <span style="font-size: 24px; font-style: italic">DCT</span>
+          <span style="font-size: 20px; text-decoration: overline"
+            >Recruitment</span
+          >
+        </a>
+      </div>
+      <div class="mx-2 mx-lg-3 my-3">
+        <div class="card radius-10">
           <div class="card-body">
             <div class="p-4 rounded">
               <h3 class="text-center mb-5">Petunjuk AT-IPP-01</h3>
@@ -163,368 +190,13 @@
               </div>
             </div>
             <div class="d-flex justify-content-center">
-              <button
+              <a
+                href="psikotest-v3.html"
                 type="button"
                 class="btn btn-primary radius-8"
-                onclick="startClick()"
               >
                 Start
-              </button>
-            </div>
-          </div>
-        </div>
-
-        <div
-          class="card mb-4 mt-4 transition post-test-start radius-10"
-          id="quiz"
-        >
-          <div class="card-header">
-            <div class="d-flex justify-content-center mb-3">
-              <h5 class="text-black mb-0">AT-IPP-01</h5>
-            </div>
-          </div>
-          <div class="card-body text-start">
-            <div class="row">
-              <div class="col-12 col-lg-2 d-none d-lg-block">
-                <div class="card radius-10">
-                  <div class="card-header text-center">Navigation</div>
-                  <div class="card-body">
-                    <div class="row">
-                      <div class="col-3 mb-3">
-                        <a href="#" type="button" class="text-decoration-none">
-                          <div class="nav-question done">
-                            <span class="nav-question-content done">1</span>
-                          </div>
-                        </a>
-                      </div>
-                      <div class="col-3 mb-3">
-                        <a href="#" type="button" class="text-decoration-none">
-                          <div class="nav-question done">
-                            <span class="nav-question-content done">2</span>
-                          </div>
-                        </a>
-                      </div>
-                      <div class="col-3 mb-3">
-                        <a href="#" type="button" class="text-decoration-none">
-                          <div class="nav-question ongoing">
-                            <span class="nav-question-content ongoing">3</span>
-                          </div>
-                        </a>
-                      </div>
-                      <div class="col-3 mb-3">
-                        <a href="#" type="button" class="text-decoration-none">
-                          <div class="nav-question">
-                            <span class="nav-question-content">4</span>
-                          </div>
-                        </a>
-                      </div>
-                      <div class="col-3 mb-3">
-                        <a href="#" type="button" class="text-decoration-none">
-                          <div class="nav-question">
-                            <span class="nav-question-content">5</span>
-                          </div>
-                        </a>
-                      </div>
-                      <div class="col-3 mb-3">
-                        <a href="#" type="button" class="text-decoration-none">
-                          <div class="nav-question">
-                            <span class="nav-question-content">6</span>
-                          </div>
-                        </a>
-                      </div>
-                      <div class="col-3 mb-3">
-                        <a href="#" type="button" class="text-decoration-none">
-                          <div class="nav-question">
-                            <span class="nav-question-content">7</span>
-                          </div>
-                        </a>
-                      </div>
-                      <div class="col-3 mb-3">
-                        <a href="#" type="button" class="text-decoration-none">
-                          <div class="nav-question">
-                            <span class="nav-question-content">8</span>
-                          </div>
-                        </a>
-                      </div>
-                      <div class="col-3 mb-3">
-                        <a href="#" type="button" class="text-decoration-none">
-                          <div class="nav-question">
-                            <span class="nav-question-content">9</span>
-                          </div>
-                        </a>
-                      </div>
-                      <div class="col-3 mb-3">
-                        <a href="#" type="button" class="text-decoration-none">
-                          <div class="nav-question">
-                            <span class="nav-question-content">10</span>
-                          </div>
-                        </a>
-                      </div>
-                      <div class="col-3 mb-3">
-                        <a href="#" type="button" class="text-decoration-none">
-                          <div class="nav-question">
-                            <span class="nav-question-content">11</span>
-                          </div>
-                        </a>
-                      </div>
-                      <div class="col-3 mb-3">
-                        <a href="#" type="button" class="text-decoration-none">
-                          <div class="nav-question">
-                            <span class="nav-question-content">12</span>
-                          </div>
-                        </a>
-                      </div>
-                      <div class="col-3 mb-3">
-                        <a href="#" type="button" class="text-decoration-none">
-                          <div class="nav-question">
-                            <span class="nav-question-content">13</span>
-                          </div>
-                        </a>
-                      </div>
-                      <div class="col-3 mb-3">
-                        <a href="#" type="button" class="text-decoration-none">
-                          <div class="nav-question">
-                            <span class="nav-question-content">14</span>
-                          </div>
-                        </a>
-                      </div>
-                      <div class="col-3 mb-3">
-                        <a href="#" type="button" class="text-decoration-none">
-                          <div class="nav-question">
-                            <span class="nav-question-content">15</span>
-                          </div>
-                        </a>
-                      </div>
-                      <div class="col-3 mb-3">
-                        <a href="#" type="button" class="text-decoration-none">
-                          <div class="nav-question">
-                            <span class="nav-question-content">16</span>
-                          </div>
-                        </a>
-                      </div>
-                      <div class="col-3 mb-3">
-                        <a href="#" type="button" class="text-decoration-none">
-                          <div class="nav-question">
-                            <span class="nav-question-content">17</span>
-                          </div>
-                        </a>
-                      </div>
-                      <div class="col-3 mb-3">
-                        <a href="#" type="button" class="text-decoration-none">
-                          <div class="nav-question">
-                            <span class="nav-question-content">18</span>
-                          </div>
-                        </a>
-                      </div>
-                      <div class="col-3 mb-3">
-                        <a href="#" type="button" class="text-decoration-none">
-                          <div class="nav-question">
-                            <span class="nav-question-content">19</span>
-                          </div>
-                        </a>
-                      </div>
-                      <div class="col-3 mb-3">
-                        <a href="#" type="button" class="text-decoration-none">
-                          <div class="nav-question">
-                            <span class="nav-question-content">20</span>
-                          </div>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-lg-10">
-                <div
-                  class="d-flex justify-content-between align-items-center mb-3"
-                >
-                  <p class="text-black mb-0">Question 1 of 20</p>
-                  <div class="d-flex align-items-center">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      class="feather feather-clock text-primary"
-                    >
-                      <circle cx="12" cy="12" r="10"></circle>
-                      <polyline points="12 6 12 12 16 14"></polyline>
-                    </svg>
-                    <!-- Timer In file psikotest.js -->
-                    <p class="text-black mb-0 ms-2" id="timer"></p>
-                    <!-- End Timer -->
-                  </div>
-                </div>
-                <div id="question-1" class="question-container">
-                  <h6 class="mt-2 mb-4 text-black">0,25 + 0,07 = ...</h6>
-                  <div class="jawaban mb-4">
-                    <div class="opsi-primary">
-                      <div class="form-check form-post-test">
-                        <input
-                          class="form-check-input"
-                          type="radio"
-                          name="opsiRadio"
-                          id="opsiRadio1"
-                        />
-                        <label
-                          class="form-check-label text-black"
-                          for="opsiRadio1"
-                        >
-                          0,32
-                        </label>
-                      </div>
-                    </div>
-                    <div class="opsi-primary">
-                      <div class="form-check form-post-test">
-                        <input
-                          class="form-check-input"
-                          type="radio"
-                          name="opsiRadio"
-                          id="opsiRadio2"
-                        />
-                        <label
-                          class="form-check-label text-black"
-                          for="opsiRadio2"
-                        >
-                          0,23
-                        </label>
-                      </div>
-                    </div>
-                    <div class="opsi-primary">
-                      <div class="form-check form-post-test">
-                        <input
-                          class="form-check-input"
-                          type="radio"
-                          name="opsiRadio"
-                          id="opsiRadio3"
-                        />
-                        <label
-                          class="form-check-label text-black"
-                          for="opsiRadio3"
-                        >
-                          0,032
-                        </label>
-                      </div>
-                    </div>
-                    <div class="opsi-primary">
-                      <div class="form-check form-post-test">
-                        <input
-                          class="form-check-input"
-                          type="radio"
-                          name="opsiRadio"
-                          id="opsiRadio4"
-                        />
-                        <label
-                          class="form-check-label text-black"
-                          for="opsiRadio4"
-                        >
-                          0,257
-                        </label>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="d-flex">
-                    <button
-                      type="button"
-                      class="btn btn-outline-secondary radius-8 prev-button"
-                    >
-                      Previous
-                    </button>
-                    <button
-                      type="button"
-                      class="btn btn-primary radius-8 ms-auto next-button"
-                    >
-                      Next
-                    </button>
-                  </div>
-                </div>
-
-                <div id="question-2" class="question-container">
-                  <div class="picture-question mb-3">
-                    <img
-                      src="assets/images/gallery/01.png"
-                      alt="image_question"
-                      width="50"
-                    />
-                  </div>
-                  <h6 class="mt-2 mb-4">
-                    ini adalah contoh pertanyaan nomor 2
-                  </h6>
-                  <div class="jawaban mb-4">
-                    <div class="opsi-primary">
-                      <div class="form-check form-post-test">
-                        <input
-                          class="form-check-input"
-                          type="radio"
-                          name="questionTwo"
-                          id="questionTwo1"
-                        />
-                        <label class="form-check-label" for="questionTwo1">
-                          15 hari
-                        </label>
-                      </div>
-                    </div>
-                    <div class="opsi-primary">
-                      <div class="form-check form-post-test">
-                        <input
-                          class="form-check-input"
-                          type="radio"
-                          name="questionTwo"
-                          id="questionTwo2"
-                        />
-                        <label class="form-check-label" for="questionTwo2">
-                          14 hari
-                        </label>
-                      </div>
-                    </div>
-                    <div class="opsi-primary">
-                      <div class="form-check form-post-test">
-                        <input
-                          class="form-check-input"
-                          type="radio"
-                          name="questionTwo"
-                          id="questionTwo3"
-                        />
-                        <label class="form-check-label" for="questionTwo3">
-                          12 hari
-                        </label>
-                      </div>
-                    </div>
-                    <div class="opsi-primary">
-                      <div class="form-check form-post-test">
-                        <input
-                          class="form-check-input"
-                          type="radio"
-                          name="questionTwo"
-                          id="questionTwo4"
-                        />
-                        <label class="form-check-label" for="questionTwo4">
-                          13 hari
-                        </label>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="d-flex">
-                    <button
-                      type="button"
-                      class="btn btn-outline-secondary prev-button radius-8"
-                    >
-                      Previous
-                    </button>
-                    <a
-                      href="post-test-finish.html"
-                      type="button"
-                      class="btn btn-primary ms-auto next-button radius-8"
-                      >Finish</a
-                    >
-                  </div>
-                </div>
-              </div>
+              </a>
             </div>
           </div>
         </div>
@@ -567,6 +239,9 @@
           $(this).find('input[type="radio"]').prop("checked", true);
         });
       });
+    </script>
+    <script>
+      new PerfectScrollbar(".scroll-instruction");
     </script>
 
     <!--app JS-->

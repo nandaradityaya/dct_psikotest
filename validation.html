@@ -86,13 +86,13 @@
       <img
         src="assets/images/gallery/plus.svg"
         alt=""
-        class="icon-plus-bg"
+        class="icon-plus-validation"
         width="20"
       />
       <img
         src="assets/images/gallery/round.svg"
         alt=""
-        class="icon-round-bg"
+        class="icon-round-validation"
         width="20"
       />
       <div
@@ -101,7 +101,64 @@
         <div class="container-fluid">
           <div class="row row-cols-1 row-cols-lg-2 row-cols-xl-2">
             <div class="col mx-auto">
-              <div class="card mb-4 radius-10">
+              <!-- SHOW THIS IF PSIKOTEST NOT YET STARTED -->
+              <div class="card radius-10">
+                <div class="card-body text-center">
+                  <div class="d-flex justify-content-center">
+                    <dotlottie-player
+                      src="https://lottie.host/6d3fde4b-0f21-456e-b10e-a375ef723656/cZshQ0jxxk.json"
+                      background="transparent"
+                      speed="1"
+                      style="width: 300px; height: 300px"
+                      loop
+                      autoplay
+                    ></dotlottie-player>
+                  </div>
+                  <div class="">
+                    <p class="mb-2">
+                      Psikotest untuk saat ini belum tersedia. Harap kembali
+                      pada waktu yang telah ditentukan untuk memulai sesi
+                      psikotest.
+                    </p>
+                    <h6 class="mb-2">29 Februari 2024 13.00</h6>
+                    <p class="mb-0">
+                      Terima kasih atas kesabaran dan pengertian Anda.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- END -->
+
+              <!-- ------------------------------------ -->
+
+              <!-- SHOW THIS IF PSIKOTEST EXPIRED -->
+              <div class="card radius-10">
+                <div class="card-body text-center">
+                  <div class="d-flex justify-content-center">
+                    <dotlottie-player
+                      src="https://lottie.host/45dc3c14-6965-4811-b636-21738451cd92/1n6R8v9Qqn.json"
+                      background="transparent"
+                      speed="1"
+                      style="width: 300px; height: 300px"
+                      loop
+                      autoplay
+                    ></dotlottie-player>
+                  </div>
+                  <div class="">
+                    <h6 class="mb-2">
+                      Mohon maaf, Anda telah melewatkan batas waktu untuk
+                      mengerjakan psikotest ini.
+                    </h6>
+                    <h6 class="mb-0">Terima kasih atas perhatiannya.</h6>
+                  </div>
+                </div>
+              </div>
+              <!-- END -->
+
+              <!-- ------------------------------------------ -->
+
+              <!-- SHOW THIS IF PSIKOTEST HAS BEEN DONE -->
+              <div class="card radius-10">
                 <div class="card-body text-center">
                   <div class="d-flex justify-content-center">
                     <dotlottie-player
@@ -117,14 +174,9 @@
                     Selamat! Anda telah menyelesaikan psikotest. Terima kasih
                     atas partisipasi Anda.
                   </h6>
-                  <a
-                    href="#"
-                    type="button"
-                    class="btn btn-primary ms-auto next-button radius-8"
-                    ><i class="bx bx-check"></i>Complete</a
-                  >
                 </div>
               </div>
+              <!-- END -->
             </div>
           </div>
           <!--end row-->
@@ -167,16 +219,6 @@
       src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
       type="module"
     ></script>
-    <script>
-      $(document).ready(function () {
-        $(".opsi-primary").click(function () {
-          $(this).find('input[type="radio"]').prop("checked", true);
-        });
-      });
-    </script>
-    <script>
-      new PerfectScrollbar(".scroll-test");
-    </script>
 
     <!--app JS-->
     <script src="assets/js/app.js"></script>
