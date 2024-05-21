@@ -251,7 +251,7 @@
 									Filter</label>
 								<div class="input-group mb-2">
 									<input type="text" class="form-control" id="startDateFilter"
-										placeholder="dd/mm/yyyy">
+										placeholder="dd-mm-yyyy">
 								</div>
 							</div>
 							<div class="col-12 col-lg-2">
@@ -1117,7 +1117,8 @@
 				uiLibrary: "bootstrap4",
 				icons: {
 					rightIcon: '<img src="assets/images/icons/calendar-days.svg" />'
-				}
+				},
+				format: "dd-mm-yyyy"
 			})
 
 			$("#endDateFilter").datepicker({
